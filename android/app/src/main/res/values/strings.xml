@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ibeni</string>
+    <string name="title_activity_main">ibeni</string>
+    <string name="package_name">com.ibeni.app</string>
+    <string name="custom_url_scheme">com.ibeni.app</string>
+</resources>
