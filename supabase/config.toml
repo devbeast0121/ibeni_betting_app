@@ -1,0 +1,4 @@
+
+[functions.fetch-odds]
+verify_jwt = false
+
