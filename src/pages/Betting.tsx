@@ -13,7 +13,7 @@ const Betting = () => {
       
       <div className={`container py-4 ${isNativeApp ? 'px-2' : 'py-6'} flex-1`}>
         <div className="max-w-7xl mx-auto">
-          <h1 className={`${isNativeApp ? 'text-2xl mb-3' : 'text-3xl mb-6'} font-bold`}>
+          <h1 className={`${isNativeApp ? 'text-xl md:text-2xl mb-3' : 'text-3xl mb-6'} font-bold`}>
             Sports Predictions
           </h1>
           <BettingInterface />
@@ -22,7 +22,7 @@ const Betting = () => {
       
       <footer className={`py-4 border-t ${isNativeApp ? 'safe-area-bottom' : ''}`}>
         <div className="container">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between text-sm text-muted-foreground mb-3 gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between text-xs md:text-sm text-muted-foreground mb-3 gap-4">
             <div>© 2025 ibeni. All rights reserved.</div>
             <div className="flex gap-4">
               <a href="/terms" className="hover:text-foreground">Terms</a>

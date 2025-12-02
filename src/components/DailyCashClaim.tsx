@@ -86,8 +86,8 @@ const DailyCashClaim = ({ onClaim }: DailyCashClaimProps) => {
       <CardContent>
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-2xl font-bold text-green-600">$1.00</p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xl md:text-2xl font-bold text-green-600">$1.00</p>
+            <p className="text-xs md:text-sm text-muted-foreground">
               {canClaim ? 'Available to claim' : `Next claim in ${timeLeft}`}
             </p>
           </div>

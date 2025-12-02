@@ -137,7 +137,7 @@ const HypotheticalInvestmentComparison = () => {
               <CardTitle className="text-xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
                 Hypothetical Investment Comparison
               </CardTitle>
-              <p className="text-sm text-green-600 dark:text-green-400 font-medium">
+              <p className="text-xs md:text-sm text-green-600 dark:text-green-400 font-medium">
                 Start building your portfolio to see investment comparisons!
               </p>
             </div>
@@ -149,7 +149,7 @@ const HypotheticalInvestmentComparison = () => {
             <div className="text-center py-8">
               <TrendingUp className="h-12 w-12 text-gray-400 mx-auto mb-4" />
               <p className="text-gray-600 dark:text-gray-400 mb-2">Place some bets to start building your portfolio</p>
-              <p className="text-sm text-gray-500 dark:text-gray-500">Once you have a portfolio balance, we'll show you how it would have performed in different investments over time.</p>
+              <p className="text-xs md:text-sm text-gray-500 dark:text-gray-500">Once you have a portfolio balance, we'll show you how it would have performed in different investments over time.</p>
             </div>
           </div>
         </CardContent>
@@ -168,7 +168,7 @@ const HypotheticalInvestmentComparison = () => {
             <CardTitle className="text-xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
               Hypothetical Investment Comparison
             </CardTitle>
-            <p className="text-sm text-green-600 dark:text-green-400 font-medium">
+            <p className="text-xs md:text-sm text-green-600 dark:text-green-400 font-medium">
               If you invested {formatCurrency(portfolioAmount)} into {todaysInvestment.name}
             </p>
           </div>
@@ -186,7 +186,7 @@ const HypotheticalInvestmentComparison = () => {
               <div className="flex items-center justify-between mb-3">
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-gray-100">{todaysInvestment.name}</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{todaysInvestment.description}</p>
+                  <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">{todaysInvestment.description}</p>
                 </div>
               </div>
               

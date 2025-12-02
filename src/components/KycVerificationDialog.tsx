@@ -86,17 +86,17 @@ export const KycVerificationDialog = () => {
                   {kycStatus.status.toUpperCase()}
                 </Badge>
                 <div>
-                  <p className="text-sm text-muted-foreground">Document Type:</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Document Type:</p>
                   <p className="font-medium">{kycStatus.document_type}</p>
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Submitted:</p>
-                  <p className="text-sm">{new Date(kycStatus.submitted_at).toLocaleDateString()}</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Submitted:</p>
+                  <p className="text-xs md:text-sm">{new Date(kycStatus.submitted_at).toLocaleDateString()}</p>
                 </div>
                 {kycStatus.status === 'rejected' && kycStatus.rejection_reason && (
                   <div>
-                    <p className="text-sm text-muted-foreground">Rejection Reason:</p>
-                    <p className="text-sm text-red-600">{kycStatus.rejection_reason}</p>
+                    <p className="text-xs md:text-sm text-muted-foreground">Rejection Reason:</p>
+                    <p className="text-xs md:text-sm text-red-600">{kycStatus.rejection_reason}</p>
                   </div>
                 )}
               </div>

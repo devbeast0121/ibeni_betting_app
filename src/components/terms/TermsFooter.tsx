@@ -2,7 +2,7 @@ const TermsFooter = () => {
   return (
     <footer className="py-4 border-t">
       <div className="container">
-        <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-3 text-sm text-muted-foreground mb-3">
+        <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-3 text-xs md:text-sm text-muted-foreground mb-3">
           <div className="text-center sm:text-left">© 2025 ibeni. All rights reserved.</div>
           <div className="flex gap-4">
             <a href="/terms" className="hover:text-foreground transition-colors">Terms</a>

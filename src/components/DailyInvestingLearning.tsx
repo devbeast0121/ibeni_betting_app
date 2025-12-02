@@ -307,7 +307,7 @@ const DailyInvestingLearning = () => {
               <CardTitle className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
                 Today's Investment Insight
               </CardTitle>
-              <p className="text-sm text-blue-600 dark:text-blue-400 font-medium">{formatDate()}</p>
+              <p className="text-xs md:text-sm text-blue-600 dark:text-blue-400 font-medium">{formatDate()}</p>
             </div>
           </div>
         </CardHeader>
@@ -346,7 +346,7 @@ const DailyInvestingLearning = () => {
               <CardTitle className="text-xl font-bold bg-gradient-to-r from-purple-600 to-violet-600 bg-clip-text text-transparent">
                 Quick Learning Tips
               </CardTitle>
-              <p className="text-sm text-purple-600 dark:text-purple-400 font-medium">
+              <p className="text-xs md:text-sm text-purple-600 dark:text-purple-400 font-medium">
                 Essential concepts for portfolio simulation success
               </p>
             </div>
@@ -361,7 +361,7 @@ const DailyInvestingLearning = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">{todaysTip.title}</h4>
-                <p className="text-sm text-gray-700 dark:text-gray-300">{todaysTip.description}</p>
+                <p className="text-xs md:text-sm text-gray-700 dark:text-gray-300">{todaysTip.description}</p>
               </div>
             </div>
           </div>
@@ -379,7 +379,7 @@ const DailyInvestingLearning = () => {
               <CardTitle className="text-xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
                 Psychology of Markets
               </CardTitle>
-              <p className="text-sm text-orange-600 dark:text-orange-400 font-medium">
+              <p className="text-xs md:text-sm text-orange-600 dark:text-orange-400 font-medium">
                 Understanding emotions and market behavior
               </p>
             </div>
@@ -394,7 +394,7 @@ const DailyInvestingLearning = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">{todaysPsychology.title}</h4>
-                <p className="text-sm text-gray-700 dark:text-gray-300">{todaysPsychology.description}</p>
+                <p className="text-xs md:text-sm text-gray-700 dark:text-gray-300">{todaysPsychology.description}</p>
               </div>
             </div>
           </div>
@@ -403,8 +403,8 @@ const DailyInvestingLearning = () => {
             <div className="flex items-start gap-3">
               <Star className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
-                <p className="text-sm font-medium text-orange-800 dark:text-orange-200 mb-1">Pro Tip</p>
-                <p className="text-sm text-orange-700 dark:text-orange-300">
+                <p className="text-xs md:text-sm font-medium text-orange-800 dark:text-orange-200 mb-1">Pro Tip</p>
+                <p className="text-xs md:text-sm text-orange-700 dark:text-orange-300">
                   Create rules for your investing decisions before emotions kick in. Set target percentages for different asset classes and stick to them regardless of market noise.
                 </p>
               </div>
@@ -424,7 +424,7 @@ const DailyInvestingLearning = () => {
               <CardTitle className="text-xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
                 Daily Budgeting Tip
               </CardTitle>
-              <p className="text-sm text-green-600 dark:text-green-400 font-medium">
+              <p className="text-xs md:text-sm text-green-600 dark:text-green-400 font-medium">
                 Build strong financial foundations
               </p>
             </div>
@@ -439,7 +439,7 @@ const DailyInvestingLearning = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">{todaysBudgetTip.title}</h4>
-                <p className="text-sm text-gray-700 dark:text-gray-300">{todaysBudgetTip.description}</p>
+                <p className="text-xs md:text-sm text-gray-700 dark:text-gray-300">{todaysBudgetTip.description}</p>
               </div>
             </div>
           </div>
@@ -448,8 +448,8 @@ const DailyInvestingLearning = () => {
             <div className="flex items-start gap-3">
               <Gift className="h-5 w-5 text-emerald-500 mt-0.5 flex-shrink-0" />
               <div>
-                <p className="text-sm font-medium text-green-800 dark:text-green-200 mb-1">Remember</p>
-                <p className="text-sm text-green-700 dark:text-green-300">
+                <p className="text-xs md:text-sm font-medium text-green-800 dark:text-green-200 mb-1">Remember</p>
+                <p className="text-xs md:text-sm text-green-700 dark:text-green-300">
                   Good budgeting habits create the foundation for successful investing. Master your spending before focusing on portfolio growth.
                 </p>
               </div>

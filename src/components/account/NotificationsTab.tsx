@@ -19,7 +19,7 @@ const NotificationsTab = () => {
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-medium">Bet Settlement</h4>
-              <p className="text-sm text-muted-foreground">Receive notifications when your bets are settled</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Receive notifications when your bets are settled</p>
             </div>
             <Switch defaultChecked />
           </div>
@@ -27,7 +27,7 @@ const NotificationsTab = () => {
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-medium">Game Start Reminder</h4>
-              <p className="text-sm text-muted-foreground">Get notified 15 minutes before games you bet on start</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Get notified 15 minutes before games you bet on start</p>
             </div>
             <Switch defaultChecked />
           </div>
@@ -35,7 +35,7 @@ const NotificationsTab = () => {
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-medium">New Betting Opportunities</h4>
-              <p className="text-sm text-muted-foreground">Receive notifications about new betting opportunities</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Receive notifications about new betting opportunities</p>
             </div>
             <Switch />
           </div>
@@ -49,7 +49,7 @@ const NotificationsTab = () => {
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-medium">Portfolio Updates</h4>
-              <p className="text-sm text-muted-foreground">Receive weekly updates on your investment portfolio</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Receive weekly updates on your investment portfolio</p>
             </div>
             <Switch defaultChecked />
           </div>
@@ -57,7 +57,7 @@ const NotificationsTab = () => {
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-medium">Loss Reinvestment</h4>
-              <p className="text-sm text-muted-foreground">Get notified when your betting losses are reinvested</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Get notified when your betting losses are reinvested</p>
             </div>
             <Switch defaultChecked />
           </div>
@@ -65,7 +65,7 @@ const NotificationsTab = () => {
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-medium">Market Insights</h4>
-              <p className="text-sm text-muted-foreground">Receive market insights and investment opportunities</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Receive market insights and investment opportunities</p>
             </div>
             <Switch />
           </div>

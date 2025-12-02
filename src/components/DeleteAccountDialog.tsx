@@ -146,10 +146,10 @@ export const DeleteAccountDialog = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-700">
+                  <div className="text-xl md:text-2xl font-bold text-green-700">
                     ${withdrawalInfo.withdrawable.toFixed(2)}
                   </div>
-                  <div className="text-sm text-green-600">
+                  <div className="text-xs md:text-sm text-green-600">
                     Will be transferred to your account before deletion
                   </div>
                 </div>
@@ -159,9 +159,9 @@ export const DeleteAccountDialog = () => {
                     <div key={index} className="bg-white/50 p-3 rounded border">
                       <div className="flex justify-between items-start mb-2">
                         <span className="font-medium">{item.type}</span>
-                        <span className="text-sm text-muted-foreground">{item.ageRestriction}</span>
+                        <span className="text-xs md:text-sm text-muted-foreground">{item.ageRestriction}</span>
                       </div>
-                      <div className="grid grid-cols-3 gap-2 text-sm">
+                      <div className="grid grid-cols-3 gap-2 text-xs md:text-sm">
                         <div>
                           <div className="text-xs text-muted-foreground">Balance</div>
                           <div>${item.balance.toFixed(2)}</div>
@@ -181,7 +181,7 @@ export const DeleteAccountDialog = () => {
                   ))}
                 </div>
 
-                <div className="flex items-center gap-2 text-sm text-green-700">
+                <div className="flex items-center gap-2 text-xs md:text-sm text-green-700">
                   <Clock className="h-4 w-4" />
                   Account age: {withdrawalInfo.accountAgeDays} days 
                   {withdrawalInfo.isUnderOneYear && ' (Higher fees apply - under 1 year)'}
@@ -201,7 +201,7 @@ export const DeleteAccountDialog = () => {
 
           {/* Reason Input */}
           <div>
-            <label htmlFor="reason" className="text-sm font-medium">
+            <label htmlFor="reason" className="text-xs md:text-sm font-medium">
               Reason for Account Deletion (Required)
             </label>
             <Textarea
@@ -216,7 +216,7 @@ export const DeleteAccountDialog = () => {
 
           {/* Confirmation Input */}
           <div>
-            <label htmlFor="confirm" className="text-sm font-medium">
+            <label htmlFor="confirm" className="text-xs md:text-sm font-medium">
               Type "DELETE MY ACCOUNT" to confirm
             </label>
             <Input

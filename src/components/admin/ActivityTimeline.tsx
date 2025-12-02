@@ -146,7 +146,7 @@ const ActivityTimeline = ({ expanded = false, className = '' }: ActivityTimeline
                 </Badge>
                 <div>
                   <p className="font-medium">{item.user}</p>
-                  <p className="text-sm text-muted-foreground">{item.time}</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">{item.time}</p>
                 </div>
               </div>
               <div className="text-right">
@@ -160,7 +160,7 @@ const ActivityTimeline = ({ expanded = false, className = '' }: ActivityTimeline
           
           {!expanded && (
             <div className="text-center">
-              <a href="/admin?tab=activity" className="text-sm text-blue-600 hover:underline">
+              <a href="/admin?tab=activity" className="text-xs md:text-sm text-blue-600 hover:underline">
                 View All Activity
               </a>
             </div>

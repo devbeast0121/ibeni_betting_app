@@ -30,7 +30,7 @@ const WelcomeLogin = () => {
     const today = new Date();
     let age = today.getFullYear() - birth.getFullYear();
     const monthDiff = today.getMonth() - birth.getMonth();
-    
+
     if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
       age--;
     }
@@ -53,12 +53,12 @@ const WelcomeLogin = () => {
 
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email || !password || !confirmPassword) {
       toast.error('Please fill in all fields');
       return;
     }
-    
+
     if (password !== confirmPassword) {
       toast.error('Passwords do not match');
       return;
@@ -73,10 +73,10 @@ const WelcomeLogin = () => {
       toast.error('Please confirm sports predictions are legal in your jurisdiction');
       return;
     }
-    
+
     try {
       setLoading(true);
-      
+
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
@@ -84,14 +84,14 @@ const WelcomeLogin = () => {
           emailRedirectTo: `${window.location.origin}/`
         }
       });
-      
+
       if (error) {
         throw error;
       }
-      
+
       toast.success('Account created! Please check your email to confirm your registration.');
       navigate('/dashboard');
-      
+
     } catch (error: any) {
       console.error('Error signing up:', error);
       toast.error(error.message || 'An error occurred during sign up');
@@ -102,26 +102,26 @@ const WelcomeLogin = () => {
 
   const handleSignIn = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email || !password) {
       toast.error('Please enter both email and password');
       return;
     }
-    
+
     try {
       setLoading(true);
-      
+
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
-      
+
       if (error) {
         throw error;
       }
-      
+
       toast.success('Logged in successfully');
-      
+
       // Determine if the user is an admin (sheradsky@gmail.com)
       if (email === 'sheradsky@gmail.com') {
         // If admin user, provide a choice for navigation
@@ -132,10 +132,10 @@ const WelcomeLogin = () => {
           }
         });
       }
-      
+
       // Navigate to dashboard in all cases
       navigate('/dashboard');
-      
+
     } catch (error: any) {
       console.error('Error signing in:', error);
       toast.error(error.message || 'An error occurred during login');
@@ -147,16 +147,16 @@ const WelcomeLogin = () => {
   return (
     <div className="space-y-6">
       <div className="text-center mb-6">
-        <h2 className="text-2xl font-bold mb-2">Create an Account</h2>
+        <h2 className="text-xl md:text-2xl font-bold mb-2">Create an Account</h2>
         <p className="text-muted-foreground">Sign up or login to start using ibeni</p>
       </div>
-      
+
       <Tabs defaultValue="signup" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 mb-4">
-          <TabsTrigger value="signup">Sign Up</TabsTrigger>
-          <TabsTrigger value="login">Login</TabsTrigger>
+        <TabsList className="w-full mb-4">
+          <TabsTrigger className="flex-1" value="signup">Sign Up</TabsTrigger>
+          <TabsTrigger className="flex-1" value="login">Login</TabsTrigger>
         </TabsList>
-        
+
         <TabsContent value="signup">
           <form onSubmit={handleSignUp} className="space-y-4">
             {/* Age Verification Section */}
@@ -165,7 +165,7 @@ const WelcomeLogin = () => {
                 <Calendar className="h-4 w-4" />
                 <p className="font-semibold">Age Verification Required</p>
               </div>
-              <p className="text-sm">
+              <p className="text-xs md:text-sm">
                 You must be 18 years or older to participate in sports predictions and sweepstakes.
               </p>
             </div>
@@ -195,10 +195,10 @@ const WelcomeLogin = () => {
 
             <div className="space-y-2">
               <Label htmlFor="signup-email">Email</Label>
-              <Input 
-                id="signup-email" 
-                type="email" 
-                placeholder="name@example.com" 
+              <Input
+                id="signup-email"
+                type="email"
+                placeholder="name@example.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -206,9 +206,9 @@ const WelcomeLogin = () => {
             </div>
             <div className="space-y-2">
               <Label htmlFor="signup-password">Password</Label>
-              <Input 
-                id="signup-password" 
-                type="password" 
+              <Input
+                id="signup-password"
+                type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
@@ -216,9 +216,9 @@ const WelcomeLogin = () => {
             </div>
             <div className="space-y-2">
               <Label htmlFor="confirm-password">Confirm Password</Label>
-              <Input 
-                id="confirm-password" 
-                type="password" 
+              <Input
+                id="confirm-password"
+                type="password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 required
@@ -226,12 +226,12 @@ const WelcomeLogin = () => {
             </div>
 
             <div className="flex items-start space-x-2">
-              <Checkbox 
-                id="jurisdiction" 
+              <Checkbox
+                id="jurisdiction"
                 checked={jurisdictionConfirmed}
                 onCheckedChange={(checked) => setJurisdictionConfirmed(checked === true)}
               />
-              <Label htmlFor="jurisdiction" className="text-sm cursor-pointer">
+              <Label htmlFor="jurisdiction" className="text-xs md:text-sm cursor-pointer">
                 I confirm that sports predictions are legal in my jurisdiction and I understand this is for entertainment purposes.
               </Label>
             </div>
@@ -245,15 +245,15 @@ const WelcomeLogin = () => {
             </Button>
           </form>
         </TabsContent>
-        
+
         <TabsContent value="login">
           <form onSubmit={handleSignIn} className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="login-email">Email</Label>
-              <Input 
-                id="login-email" 
-                type="email" 
-                placeholder="name@example.com" 
+              <Input
+                id="login-email"
+                type="email"
+                placeholder="name@example.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -261,9 +261,9 @@ const WelcomeLogin = () => {
             </div>
             <div className="space-y-2">
               <Label htmlFor="login-password">Password</Label>
-              <Input 
-                id="login-password" 
-                type="password" 
+              <Input
+                id="login-password"
+                type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required

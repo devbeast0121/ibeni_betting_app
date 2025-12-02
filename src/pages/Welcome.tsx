@@ -112,19 +112,19 @@ const Welcome = () => {
                           <p className="text-muted-foreground mb-4 leading-relaxed">{slide.description}</p>
                           
                           {index === 0 && (
-                            <div className="bg-blue-50 p-3 rounded-lg text-sm text-blue-800 mt-2 border border-blue-200">
+                            <div className="bg-blue-50 p-3 rounded-lg text-xs md:text-sm text-blue-800 mt-2 border border-blue-200">
                               <strong>Revolutionary Approach:</strong> ibeni transforms sports entertainment from money-throwing to educational value
                             </div>
                           )}
                           
                           {index === 2 && (
-                            <div className="bg-green-50 p-3 rounded-lg text-sm text-green-800 mt-2 border border-green-200">
+                            <div className="bg-green-50 p-3 rounded-lg text-xs md:text-sm text-green-800 mt-2 border border-green-200">
                               <strong>Win:</strong> Win $200 → $20 fee (10%) = $180 Growth Cash | <strong>Lose:</strong> Bet $100 → $10 fee, $90 to portfolio
                             </div>
                           )}
                           
                           {index === 4 && (
-                            <div className="bg-purple-50 p-3 rounded-lg text-sm text-purple-800 mt-2 border border-purple-200">
+                            <div className="bg-purple-50 p-3 rounded-lg text-xs md:text-sm text-purple-800 mt-2 border border-purple-200">
                               <strong>Smart Recovery:</strong> Your "losses" become redeemable portfolio value instead of disappearing forever
                             </div>
                           )}
@@ -149,11 +149,11 @@ const Welcome = () => {
             ) : currentStep === 6 ? (
               <div className="space-y-6">
                 <div className="text-center mb-6">
-                  <h2 className="text-2xl font-bold mb-2">Terms & Conditions</h2>
+                  <h2 className="text-xl md:text-2xl font-bold mb-2">Terms & Conditions</h2>
                   <p className="text-muted-foreground">Please review and accept our terms before continuing</p>
                 </div>
                 
-                <div className="border rounded-md p-4 h-48 overflow-y-auto mb-4 text-sm text-muted-foreground">
+                <div className="border rounded-md p-4 h-48 overflow-y-auto mb-4 text-xs md:text-sm text-muted-foreground">
                   <p className="mb-4">By using ibeni, you agree to the following terms:</p>
                   <p className="mb-4"><strong>1. Withdrawal Rules:</strong> Growth Cash winnings may be withdrawn by Premium subscribers after a 3-month waiting period. Free members cannot withdraw Growth Cash winnings. Portfolio losses may be withdrawn by all members after one year with additional withdrawal fees: 5% after one year, 50% before one year.</p>
                   <p className="mb-4"><strong>2. Platform Fees:</strong> 10% fee on winnings when you win, 10% fee on bet amount when you lose. This fee is deducted from each bet result.</p>
@@ -173,7 +173,7 @@ const Welcome = () => {
                   />
                   <Label 
                     htmlFor="terms" 
-                    className="text-sm cursor-pointer"
+                    className="text-xs md:text-sm cursor-pointer"
                   >
                     I have read and agree to the Terms & Conditions, including withdrawal rules, platform fees, and understand this is a sweepstakes entertainment platform with portfolio simulation only.
                   </Label>
@@ -199,7 +199,7 @@ const Welcome = () => {
       </main>
       
       <footer className="py-4 border-t">
-        <div className="container text-center text-sm text-muted-foreground">
+        <div className="container text-center text-xs md:text-sm text-muted-foreground">
           © 2025 Ibeni. All rights reserved.
         </div>
       </footer>

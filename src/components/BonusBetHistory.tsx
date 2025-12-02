@@ -92,7 +92,7 @@ const BonusBetHistory = () => {
             <Clock className="h-4 w-4 text-amber-600" />
             <span className="font-medium text-amber-800">Next $25 Bonus</span>
           </div>
-          <p className="text-sm text-amber-700">
+          <p className="text-xs md:text-sm text-amber-700">
             Expected: {nextAward.toLocaleDateString()} ({daysUntilNext} days)
           </p>
           <p className="text-xs text-amber-600 mt-1">
@@ -103,7 +103,7 @@ const BonusBetHistory = () => {
         {/* Award History */}
         {bonusAwards && bonusAwards.length > 0 ? (
           <div className="space-y-3">
-            <h4 className="font-medium text-sm text-muted-foreground">Previous Awards</h4>
+            <h4 className="font-medium text-xs md:text-sm text-muted-foreground">Previous Awards</h4>
             {bonusAwards.map((award) => (
               <div key={award.id} className="flex items-center justify-between p-3 border rounded-lg">
                 <div className="flex items-center gap-3">
@@ -112,7 +112,7 @@ const BonusBetHistory = () => {
                   </div>
                   <div>
                     <p className="font-medium">${award.amount} Bonus Bets</p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-xs md:text-sm text-muted-foreground">
                       {formatPeriod(award.award_period)}
                     </p>
                   </div>
@@ -130,7 +130,7 @@ const BonusBetHistory = () => {
           <div className="text-center py-6 text-muted-foreground">
             <Gift className="h-12 w-12 mx-auto mb-3 opacity-50" />
             <p>No bonus bets awarded yet</p>
-            <p className="text-sm">Subscribe to Premium to start receiving $25 every 4 months</p>
+            <p className="text-xs md:text-sm">Subscribe to Premium to start receiving $25 every 4 months</p>
           </div>
         )}
       </CardContent>

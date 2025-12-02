@@ -1,0 +1,77 @@
+/* Capacitor-specific styling fixes */
+
+/* Safe area handling for iOS notches */
+:root {
+    --safe-area-top: env(safe-area-inset-top, 0px);
+    --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+    --safe-area-left: env(safe-area-inset-left, 0px);
+    --safe-area-right: env(safe-area-inset-right, 0px);
+}
+
+/* Only apply these fixes when running as native app */
+body.capacitor {
+    /* Remove the fixed positioning - let normal scroll work */
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Disable text selection and tap highlights */
+body.capacitor * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Allow text selection for inputs */
+body.capacitor input,
+body.capacitor textarea,
+body.capacitor [contenteditable] {
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+/* Prevent zoom on input focus (iOS) */
+body.capacitor input,
+body.capacitor select,
+body.capacitor textarea {
+    font-size: 16px !important;
+}
+
+/* Fix for 100vh issues on mobile */
+body.capacitor .full-height {
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+}
+
+/* Smooth scrolling for iOS */
+body.capacitor {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Fix for fixed positioned elements - apply to your header/footer components */
+body.capacitor .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: var(--safe-area-top);
+    z-index: 1000;
+}
+
+body.capacitor .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: var(--safe-area-bottom);
+    z-index: 1000;
+}
+
+/* Remove padding from root in native app */
+body.capacitor #root {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}

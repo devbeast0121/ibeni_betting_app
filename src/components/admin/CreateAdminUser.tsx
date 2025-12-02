@@ -43,7 +43,7 @@ const CreateAdminUser = () => {
   return (
     <div className="mt-6 p-4 border rounded-md bg-muted/20">
       <h3 className="font-medium mb-2">Admin User Setup</h3>
-      <p className="text-sm text-muted-foreground mb-4">
+      <p className="text-xs md:text-sm text-muted-foreground mb-4">
         Create admin user for ibenisportportfolio@gmail.com if it doesn't exist yet.
       </p>
       <Button 

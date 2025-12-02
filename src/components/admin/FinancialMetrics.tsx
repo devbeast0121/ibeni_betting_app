@@ -117,7 +117,7 @@ const FinancialMetrics = ({ expanded = false, className = '' }: FinancialMetrics
         <div className="mt-6 grid grid-cols-2 gap-4">
           {metrics.map((metric, index) => (
             <div key={index} className="flex flex-col">
-              <span className="text-sm text-muted-foreground">{metric.name}</span>
+              <span className="text-xs md:text-sm text-muted-foreground">{metric.name}</span>
               <div className="flex items-baseline">
                 <span className="text-xl font-semibold mr-2">{metric.value}</span>
                 <span className={metric.changeType === 'positive' ? 'text-green-600 text-xs' : 'text-red-600 text-xs'}>
@@ -140,7 +140,7 @@ const FinancialMetrics = ({ expanded = false, className = '' }: FinancialMetrics
                         <Wallet className="h-5 w-5 text-green-700" />
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Platform Fees (10%)</p>
+                        <p className="text-xs md:text-sm text-muted-foreground">Platform Fees (10%)</p>
                         <h3 className="text-xl font-semibold">
                           ${(financialMetrics?.platformFeeRevenue || 0).toLocaleString()}
                         </h3>
@@ -159,7 +159,7 @@ const FinancialMetrics = ({ expanded = false, className = '' }: FinancialMetrics
                         <TrendingUp className="h-5 w-5 text-blue-700" />
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Subscriptions</p>
+                        <p className="text-xs md:text-sm text-muted-foreground">Subscriptions</p>
                         <h3 className="text-xl font-semibold">
                           ${(financialMetrics?.subscriptionRevenue || 0).toLocaleString()}
                         </h3>
@@ -178,7 +178,7 @@ const FinancialMetrics = ({ expanded = false, className = '' }: FinancialMetrics
                         <DollarSign className="h-5 w-5 text-purple-700" />
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Withdrawal Fees</p>
+                        <p className="text-xs md:text-sm text-muted-foreground">Withdrawal Fees</p>
                         <h3 className="text-xl font-semibold">
                           ${(financialMetrics?.withdrawalFees || 0).toLocaleString()}
                         </h3>
@@ -198,7 +198,7 @@ const FinancialMetrics = ({ expanded = false, className = '' }: FinancialMetrics
                 <CardContent className="pt-6">
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     <div>
-                      <p className="text-sm text-muted-foreground">Total Predictions</p>
+                      <p className="text-xs md:text-sm text-muted-foreground">Total Predictions</p>
                       <p className="text-xl font-semibold">
                         {financialMetrics?.totalPredictions || 0}
                       </p>
@@ -207,7 +207,7 @@ const FinancialMetrics = ({ expanded = false, className = '' }: FinancialMetrics
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">User Balances</p>
+                      <p className="text-xs md:text-sm text-muted-foreground">User Balances</p>
                       <p className="text-xl font-semibold">
                         ${((financialMetrics?.totalGrowthCash || 0) + (financialMetrics?.totalAvailableBalance || 0)).toLocaleString()}
                       </p>
@@ -216,7 +216,7 @@ const FinancialMetrics = ({ expanded = false, className = '' }: FinancialMetrics
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Portfolio Simulation</p>
+                      <p className="text-xs md:text-sm text-muted-foreground">Portfolio Simulation</p>
                       <p className="text-xl font-semibold">
                         ${(financialMetrics?.totalInvested || 0).toLocaleString()}
                       </p>
@@ -225,7 +225,7 @@ const FinancialMetrics = ({ expanded = false, className = '' }: FinancialMetrics
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Revenue Rate</p>
+                      <p className="text-xs md:text-sm text-muted-foreground">Revenue Rate</p>
                       <p className="text-xl font-semibold text-green-600">
                         {financialMetrics?.totalDeposits ? 
                           ((financialMetrics.totalRevenue / financialMetrics.totalDeposits) * 100).toFixed(1) + '%' : 

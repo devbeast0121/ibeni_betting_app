@@ -108,8 +108,8 @@ const RevenueMetrics = ({ className = '' }: RevenueMetricsProps) => {
             <CardContent className="pt-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-muted-foreground">{kpi.title}</p>
-                  <p className="text-2xl font-bold">
+                  <p className="text-xs md:text-sm font-medium text-muted-foreground">{kpi.title}</p>
+                  <p className="text-xl md:text-2xl font-bold">
                     ${kpi.value.toLocaleString()}
                   </p>
                   <div className="flex items-center mt-1">
@@ -118,7 +118,7 @@ const RevenueMetrics = ({ className = '' }: RevenueMetricsProps) => {
                     ) : (
                       <ArrowDownRight className="h-4 w-4 text-red-600" />
                     )}
-                    <span className={`text-sm ml-1 ${kpi.changeType === 'positive' ? 'text-green-600' : 'text-red-600'}`}>
+                    <span className={`text-xs md:text-sm ml-1 ${kpi.changeType === 'positive' ? 'text-green-600' : 'text-red-600'}`}>
                       {kpi.change}%
                     </span>
                   </div>
@@ -167,9 +167,9 @@ const RevenueMetrics = ({ className = '' }: RevenueMetricsProps) => {
                       className="w-3 h-3 rounded-full" 
                       style={{ backgroundColor: item.color }}
                     />
-                    <span className="text-sm">{item.name}</span>
+                    <span className="text-xs md:text-sm">{item.name}</span>
                   </div>
-                  <span className="text-sm font-medium">${item.value.toLocaleString()}</span>
+                  <span className="text-xs md:text-sm font-medium">${item.value.toLocaleString()}</span>
                 </div>
               ))}
             </div>
@@ -209,8 +209,8 @@ const RevenueMetrics = ({ className = '' }: RevenueMetricsProps) => {
             <div className="space-y-4">
               <div>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-medium">Revenue Rate</span>
-                  <span className="text-sm text-muted-foreground">
+                  <span className="text-xs md:text-sm font-medium">Revenue Rate</span>
+                  <span className="text-xs md:text-sm text-muted-foreground">
                     {financialMetrics?.totalDeposits ? 
                       ((financialMetrics.totalRevenue / financialMetrics.totalDeposits) * 100).toFixed(1) + '%' : 
                       '0%'
@@ -228,8 +228,8 @@ const RevenueMetrics = ({ className = '' }: RevenueMetricsProps) => {
 
               <div>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-medium">Subscription Rate</span>
-                  <span className="text-sm text-muted-foreground">
+                  <span className="text-xs md:text-sm font-medium">Subscription Rate</span>
+                  <span className="text-xs md:text-sm text-muted-foreground">
                     {financialMetrics?.deposits ? 
                       ((financialMetrics.activeSubscribers / new Set(financialMetrics.deposits.map(d => d.user_id)).size) * 100).toFixed(1) + '%' :
                       '0%'
@@ -248,31 +248,31 @@ const RevenueMetrics = ({ className = '' }: RevenueMetricsProps) => {
 
             <div className="space-y-3">
               <div className="flex justify-between items-center">
-                <span className="text-sm text-muted-foreground">Total Predictions</span>
+                <span className="text-xs md:text-sm text-muted-foreground">Total Predictions</span>
                 <Badge variant="outline">{financialMetrics?.totalPredictions || 0}</Badge>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-sm text-muted-foreground">Growth Cash Bets</span>
+                <span className="text-xs md:text-sm text-muted-foreground">Growth Cash Bets</span>
                 <Badge variant="outline">{financialMetrics?.growthCashPredictions || 0}</Badge>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-sm text-muted-foreground">Active Subscribers</span>
+                <span className="text-xs md:text-sm text-muted-foreground">Active Subscribers</span>
                 <Badge variant="outline" className="bg-green-50 text-green-700">
                   {financialMetrics?.activeSubscribers || 0}
                 </Badge>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-sm text-muted-foreground">Total Withdrawals</span>
+                <span className="text-xs md:text-sm text-muted-foreground">Total Withdrawals</span>
                 <Badge variant="outline">{financialMetrics?.withdrawals?.length || 0}</Badge>
               </div>
             </div>
 
             <div className="space-y-3">
               <div className="text-center p-4 bg-green-50 rounded-lg">
-                <p className="text-2xl font-bold text-green-700">
+                <p className="text-xl md:text-2xl font-bold text-green-700">
                   ${((financialMetrics?.totalRevenue || 0) - ((financialMetrics?.totalDeposits || 0) * 0.03)).toLocaleString()}
                 </p>
-                <p className="text-sm text-green-600">Net Profit (Est.)</p>
+                <p className="text-xs md:text-sm text-green-600">Net Profit (Est.)</p>
                 <p className="text-xs text-muted-foreground">After 3% operating costs</p>
               </div>
             </div>

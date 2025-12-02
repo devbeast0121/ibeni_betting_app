@@ -143,7 +143,7 @@ const SubscriptionInfo = () => {
         </Card>
       </div>
 
-      <div className="p-4 bg-muted rounded-lg text-sm">
+      <div className="p-4 bg-muted rounded-lg text-xs md:text-sm">
         <p className="font-medium mb-2">Platform Operation Fees:</p>
         <ul className="space-y-1 text-muted-foreground">
           <li>• All membership fees are non-refundable</li>

@@ -156,11 +156,11 @@ export const BetTemplatesDialog = ({
                             )}
                           </div>
                           {template.description && (
-                            <p className="text-sm text-muted-foreground mb-2">
+                            <p className="text-xs md:text-sm text-muted-foreground mb-2">
                               {template.description}
                             </p>
                           )}
-                          <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                          <div className="flex items-center gap-4 text-xs md:text-sm text-muted-foreground">
                             <span>${template.bet_amount} • {template.bet_type}</span>
                             <span>{template.selections.length} selections</span>
                             <span>Used {template.times_used} times</span>
@@ -208,11 +208,11 @@ export const BetTemplatesDialog = ({
                         <div className="flex-1">
                           <h4 className="font-medium mb-2">{template.name}</h4>
                           {template.description && (
-                            <p className="text-sm text-muted-foreground mb-2">
+                            <p className="text-xs md:text-sm text-muted-foreground mb-2">
                               {template.description}
                             </p>
                           )}
-                          <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                          <div className="flex items-center gap-4 text-xs md:text-sm text-muted-foreground">
                             <span>${template.bet_amount} • {template.bet_type}</span>
                             <span>{template.selections.length} selections</span>
                             <span>Used {template.times_used} times</span>

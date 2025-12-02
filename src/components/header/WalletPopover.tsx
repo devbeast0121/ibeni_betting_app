@@ -20,7 +20,7 @@ const WalletPopover = ({ isLoadingBalance, balance }: WalletPopoverProps) => {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button variant="outline" size="sm" className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm">
+        <Button variant="outline" size="sm" className="flex items-center gap-1 sm:gap-2 text-xs sm:text-xs md:text-sm">
           <Wallet className="h-3 w-3 sm:h-4 sm:w-4" />
           <span className="font-medium">
             {isLoadingBalance ? "..." : `$${balance?.growth_cash.toFixed(2)}`}
@@ -30,21 +30,21 @@ const WalletPopover = ({ isLoadingBalance, balance }: WalletPopoverProps) => {
       <PopoverContent className="w-[calc(100vw-2rem)] sm:w-80" align="end">
         <div className="space-y-3 sm:space-y-4">
           <div>
-            <h4 className="font-medium mb-2 text-sm sm:text-base">Your Balances</h4>
+            <h4 className="font-medium mb-2 text-xs md:text-sm sm:text-base">Your Balances</h4>
             <div className="space-y-2">
-              <div className="flex justify-between text-xs sm:text-sm">
+              <div className="flex justify-between text-xs sm:text-xs md:text-sm">
                 <span>Fun Tokens:</span>
                 <span className="font-medium">{isLoadingBalance ? "..." : balance?.available_balance.toFixed(2)}</span>
               </div>
-              <div className="flex justify-between text-xs sm:text-sm">
+              <div className="flex justify-between text-xs sm:text-xs md:text-sm">
                 <span>Growth Cash:</span>
                 <span className="font-medium">${isLoadingBalance ? "..." : balance?.growth_cash.toFixed(2)}</span>
               </div>
-              <div className="flex justify-between text-xs sm:text-sm">
+              <div className="flex justify-between text-xs sm:text-xs md:text-sm">
                 <span>Bonus Bets:</span>
                 <span className="font-medium">${isLoadingBalance ? "..." : balance?.bonus_bets.toFixed(2)}</span>
               </div>
-              <div className="flex justify-between text-xs sm:text-sm">
+              <div className="flex justify-between text-xs sm:text-xs md:text-sm">
                 <span>Invested Balance:</span>
                 <span className="font-medium">${isLoadingBalance ? "..." : balance?.invested_balance.toFixed(2)}</span>
               </div>

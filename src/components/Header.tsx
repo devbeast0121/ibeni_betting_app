@@ -58,8 +58,8 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-30 w-full border-b bg-background/95 backdrop-blur">
-      <div className="container flex h-16 items-center justify-between gap-4">
+    <header className="sticky z-30 w-full border-b bg-background/95 backdrop-blur">
+      <div className="container flex h-16 items-end md:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           {/* Mobile Menu */}
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -146,26 +146,26 @@ const Header = () => {
             <TabsList className="bg-transparent px-0 mb-0 gap-6">
               <TabsTrigger
                 value="dashboard"
-                className="data-[state=active]:border-b-2 data-[state=active]:border-accent rounded-none data-[state=active]:shadow-none px-4 text-sm"
+                className="data-[state=active]:border-b-2 data-[state=active]:border-accent rounded-none data-[state=active]:shadow-none px-4 text-xs md:text-sm"
               >
                 Dashboard
               </TabsTrigger>
               <TabsTrigger
                 value="social"
-                className="data-[state=active]:border-b-2 data-[state=active]:border-accent rounded-none data-[state=active]:shadow-none px-4 text-sm flex items-center gap-1.5"
+                className="data-[state=active]:border-b-2 data-[state=active]:border-accent rounded-none data-[state=active]:shadow-none px-4 text-xs md:text-sm flex items-center gap-1.5"
               >
                 <Users className="w-3.5 h-3.5" />
                 Social
               </TabsTrigger>
               <TabsTrigger
                 value="betting"
-                className="data-[state=active]:border-b-2 data-[state=active]:border-accent rounded-none data-[state=active]:shadow-none px-4 text-sm"
+                className="data-[state=active]:border-b-2 data-[state=active]:border-accent rounded-none data-[state=active]:shadow-none px-4 text-xs md:text-sm"
               >
                 Sportsbook
               </TabsTrigger>
               <TabsTrigger
                 value="portfolio"
-                className="data-[state=active]:border-b-2 data-[state=active]:border-accent rounded-none data-[state=active]:shadow-none px-4 text-sm"
+                className="data-[state=active]:border-b-2 data-[state=active]:border-accent rounded-none data-[state=active]:shadow-none px-4 text-xs md:text-sm"
               >
                 Portfolio
               </TabsTrigger>

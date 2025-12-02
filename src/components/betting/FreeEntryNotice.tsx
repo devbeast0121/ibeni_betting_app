@@ -11,7 +11,7 @@ const FreeEntryNotice = () => {
         <div className="flex items-start gap-3">
           <Gift className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
           <div className="flex-1">
-            <h3 className="font-bold text-green-800 text-sm">FREE DAILY ENTRY - NO PURCHASE NECESSARY</h3>
+            <h3 className="font-bold text-green-800 text-xs md:text-sm">FREE DAILY ENTRY - NO PURCHASE NECESSARY</h3>
             <p className="text-xs text-green-700 mt-1">
               Get 100 free Fun Tokens + $1 Growth Cash every day to participate in our sweepstakes predictions! 
               Simply claim your daily bonus to start making predictions and potentially win prizes.

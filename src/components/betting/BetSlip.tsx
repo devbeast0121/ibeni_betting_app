@@ -162,7 +162,7 @@ const BetSlip = ({
             
             <div className="space-y-4">
               <div>
-                <label className="text-sm font-medium">
+                <label className="text-xs md:text-sm font-medium">
                   Entry Amount ({betType === 'fun_tokens' ? 'Fun Tokens' : betType === 'growth_cash' ? 'Growth Cash' : 'Bonus Bet'})
                 </label>
                 <div className="mt-1 flex">
@@ -193,7 +193,7 @@ const BetSlip = ({
               </div>
               
               <div className="bg-muted/50 p-4 rounded-md">
-                <div className="flex justify-between text-sm">
+                <div className="flex justify-between text-xs md:text-sm">
                   <span>Potential Prize:</span>
                   <span className="font-medium">
                     {calculatePotentialWinnings()} {betType === 'fun_tokens' ? 'tokens' : 'USD'}

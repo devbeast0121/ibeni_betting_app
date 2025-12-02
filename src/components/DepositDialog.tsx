@@ -157,12 +157,12 @@ export const DepositDialog = () => {
             <div className="flex flex-col items-center justify-center p-4 border-2 border-dashed rounded-lg bg-muted/20">
               <Gift className="h-10 w-10 text-blue-500 mb-2" />
               <h3 className="font-medium text-lg">Daily Free Fun Tokens</h3>
-              <p className="text-center text-muted-foreground text-sm mb-4">
+              <p className="text-center text-muted-foreground text-xs md:text-sm mb-4">
                 Claim 100 free Fun Tokens once per day
               </p>
               
               {!canClaimFreeTokens && lastFreeTokenDate && (
-                <div className="bg-amber-50 text-amber-800 p-3 rounded-md text-sm mb-4 w-full">
+                <div className="bg-amber-50 text-amber-800 p-3 rounded-md text-xs md:text-sm mb-4 w-full">
                   <p className="font-medium">You've already claimed your free tokens today</p>
                   <p className="text-xs">
                     Last claimed: {lastFreeTokenDate.toLocaleDateString()} at {lastFreeTokenDate.toLocaleTimeString()}
@@ -183,7 +183,7 @@ export const DepositDialog = () => {
           
           <TabsContent value="growth_cash" className="space-y-4">
             <div>
-              <label htmlFor="growth-amount" className="text-sm font-medium">
+              <label htmlFor="growth-amount" className="text-xs md:text-sm font-medium">
                 Deposit Amount (Minimum $10)
               </label>
               <div className="relative mt-1">
@@ -205,13 +205,13 @@ export const DepositDialog = () => {
             
             <div className="flex items-center bg-blue-50 border border-blue-200 p-3 rounded-md">
               <Building2 className="h-5 w-5 text-blue-500 mr-2 flex-shrink-0" />
-              <p className="text-sm text-blue-800">
+              <p className="text-xs md:text-sm text-blue-800">
                 <span className="font-medium">Secure Payment via Stripe: </span>
                 Fast, secure deposits using Stripe's industry-leading payment processing.
               </p>
             </div>
             
-            <div className="text-sm bg-muted/50 p-4 rounded-lg space-y-3">
+            <div className="text-xs md:text-sm bg-muted/50 p-4 rounded-lg space-y-3">
               <div>
                 <p className="font-medium">Sports Betting Entertainment Information:</p>
                 <ul className="list-disc pl-5 mt-1 space-y-1 text-xs">

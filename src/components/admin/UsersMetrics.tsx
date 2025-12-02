@@ -82,7 +82,7 @@ const UsersMetrics = ({ expanded = false, className = '' }: UsersMetricsProps) =
           {userSegments.map((segment, index) => (
             <div key={index} className="flex flex-col">
               <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">{segment.name}</span>
+                <span className="text-xs md:text-sm text-muted-foreground">{segment.name}</span>
                 <Badge className={segment.color}>{segment.percentage}%</Badge>
               </div>
               <span className="text-xl font-semibold mt-1">{segment.count}</span>
@@ -97,7 +97,7 @@ const UsersMetrics = ({ expanded = false, className = '' }: UsersMetricsProps) =
               <Card>
                 <CardContent className="pt-6">
                   <div className="flex flex-col">
-                    <span className="text-sm text-muted-foreground">Total Registered</span>
+                    <span className="text-xs md:text-sm text-muted-foreground">Total Registered</span>
                     <span className="text-xl font-semibold mt-1">{totalUsers}</span>
                   </div>
                 </CardContent>
@@ -105,7 +105,7 @@ const UsersMetrics = ({ expanded = false, className = '' }: UsersMetricsProps) =
               <Card>
                 <CardContent className="pt-6">
                   <div className="flex flex-col">
-                    <span className="text-sm text-muted-foreground">Growth Rate</span>
+                    <span className="text-xs md:text-sm text-muted-foreground">Growth Rate</span>
                     <span className="text-xl font-semibold mt-1">
                       {totalUsers > 0 ? '+12.3%' : '0%'}
                     </span>
@@ -115,7 +115,7 @@ const UsersMetrics = ({ expanded = false, className = '' }: UsersMetricsProps) =
               <Card>
                 <CardContent className="pt-6">
                   <div className="flex flex-col">
-                    <span className="text-sm text-muted-foreground">Active Users</span>
+                    <span className="text-xs md:text-sm text-muted-foreground">Active Users</span>
                     <span className="text-xl font-semibold mt-1">{Math.floor(totalUsers * 0.7)}</span>
                   </div>
                 </CardContent>

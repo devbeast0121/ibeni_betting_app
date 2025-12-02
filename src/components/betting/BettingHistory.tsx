@@ -70,8 +70,8 @@ const BettingHistory = () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Total Bets</p>
-                <p className="text-2xl font-bold">{stats.totalBets}</p>
+                <p className="text-xs md:text-sm font-medium text-muted-foreground">Total Bets</p>
+                <p className="text-xl md:text-2xl font-bold">{stats.totalBets}</p>
               </div>
               <Target className="h-8 w-8 text-muted-foreground" />
             </div>
@@ -82,8 +82,8 @@ const BettingHistory = () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Win Rate</p>
-                <p className="text-2xl font-bold">{stats.winRate.toFixed(1)}%</p>
+                <p className="text-xs md:text-sm font-medium text-muted-foreground">Win Rate</p>
+                <p className="text-xl md:text-2xl font-bold">{stats.winRate.toFixed(1)}%</p>
                 {stats.totalPending > 0 && (
                   <p className="text-xs text-muted-foreground">{stats.totalPending} pending</p>
                 )}
@@ -97,8 +97,8 @@ const BettingHistory = () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Total Winnings</p>
-                <p className="text-2xl font-bold">${stats.totalWinnings.toFixed(2)}</p>
+                <p className="text-xs md:text-sm font-medium text-muted-foreground">Total Winnings</p>
+                <p className="text-xl md:text-2xl font-bold">${stats.totalWinnings.toFixed(2)}</p>
               </div>
               <DollarSign className="h-8 w-8 text-green-500" />
             </div>
@@ -109,8 +109,8 @@ const BettingHistory = () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Net P&L</p>
-                <p className={`text-2xl font-bold ${stats.totalWinnings - stats.totalSpent >= 0 ? 'text-green-500' : 'text-red-500'}`}>
+                <p className="text-xs md:text-sm font-medium text-muted-foreground">Net P&L</p>
+                <p className={`text-xl md:text-2xl font-bold ${stats.totalWinnings - stats.totalSpent >= 0 ? 'text-green-500' : 'text-red-500'}`}>
                   ${(stats.totalWinnings - stats.totalSpent).toFixed(2)}
                 </p>
               </div>
@@ -165,7 +165,7 @@ const BettingHistory = () => {
                     <TableCell>
                       <div className="max-w-xs">
                         {bet.selections.map((selection: any, index: number) => (
-                          <div key={index} className="text-sm">
+                          <div key={index} className="text-xs md:text-sm">
                             <span className="font-medium">{selection.selection}</span>
                             <span className="text-muted-foreground"> ({selection.odds})</span>
                           </div>

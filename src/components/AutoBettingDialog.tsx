@@ -200,11 +200,11 @@ export const AutoBettingDialog = () => {
                               )}
                             </div>
                             {expert.bio && (
-                              <p className="text-sm text-muted-foreground mb-3">
+                              <p className="text-xs md:text-sm text-muted-foreground mb-3">
                                 {expert.bio}
                               </p>
                             )}
-                            <div className="flex items-center gap-4 text-sm">
+                            <div className="flex items-center gap-4 text-xs md:text-sm">
                               <Badge className="bg-green-100 text-green-800 border-green-200">
                                 {expert.win_rate.toFixed(1)}% Win Rate
                               </Badge>
@@ -285,7 +285,7 @@ export const AutoBettingDialog = () => {
 
                 <div className="bg-muted p-4 rounded-lg">
                   <h4 className="font-medium mb-2">Expert Requirements:</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
+                  <ul className="text-xs md:text-sm text-muted-foreground space-y-1">
                     <li>• Minimum 60% win rate over 50+ bets</li>
                     <li>• Positive profit over the last 3 months</li>
                     <li>• Active betting history</li>

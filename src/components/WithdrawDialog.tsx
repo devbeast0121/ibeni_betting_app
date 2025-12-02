@@ -84,21 +84,21 @@ export const WithdrawDialog = () => {
           {!eligibilityInfo.hasEligibleFunds ? (
             <Alert className="border-red-200 bg-red-50">
               <Ban className="h-4 w-4 text-red-600" />
-              <AlertDescription className="text-red-800 text-sm">
+              <AlertDescription className="text-red-800 text-xs md:text-sm">
                 <strong>NO ELIGIBLE FUNDS:</strong> You currently don't have any Growth Cash eligible for withdrawal. Growth Cash requires premium subscription and 3-month waiting period.
               </AlertDescription>
             </Alert>
           ) : (
             <Alert className="border-green-200 bg-green-50">
               <AlertCircle className="h-4 w-4 text-green-600" />
-              <AlertDescription className="text-green-800 text-sm">
+              <AlertDescription className="text-green-800 text-xs md:text-sm">
                 <strong>ELIGIBLE FUNDS:</strong> You have $${eligibilityInfo.totalEligible.toFixed(2)} available for withdrawal.
               </AlertDescription>
             </Alert>
           )}
           
           <div>
-            <label htmlFor="amount" className="text-sm font-medium">
+            <label htmlFor="amount" className="text-xs md:text-sm font-medium">
               Withdrawal Amount
             </label>
             <div className="relative mt-1">
@@ -122,7 +122,7 @@ export const WithdrawDialog = () => {
             </div>
           </div>
           
-          <div className="text-sm bg-muted/50 p-3 rounded-lg space-y-2">
+          <div className="text-xs md:text-sm bg-muted/50 p-3 rounded-lg space-y-2">
             <div className="text-xs">
               <div>
                 <p className="font-medium">Growth Cash:</p>

@@ -105,7 +105,7 @@ const HowItWorks = () => {
                   <CardTitle className="text-xl font-bold text-gray-900 dark:text-gray-100">
                     {scenario.title}
                   </CardTitle>
-                  <p className={`text-sm font-medium ${scenario.iconColor} dark:opacity-80`}>
+                  <p className={`text-xs md:text-sm font-medium ${scenario.iconColor} dark:opacity-80`}>
                     {scenario.description}
                   </p>
                 </div>
@@ -120,7 +120,7 @@ const HowItWorks = () => {
                       <div className={`p-1.5 ${scenario.bgAccent}/10 rounded-lg`}>
                         <ArrowRight className={`h-4 w-4 ${scenario.iconColor}`} />
                       </div>
-                      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex-1">
+                      <p className="text-xs md:text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex-1">
                         {detail}
                       </p>
                     </div>
@@ -135,13 +135,13 @@ const HowItWorks = () => {
       <div className="max-w-4xl mx-auto">
         <Card className="bg-gradient-to-r from-green-50 to-blue-50 border-green-200">
           <CardContent className="p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4 text-gray-800">The Growth Cash Advantage</h3>
+            <h3 className="text-xl md:text-2xl font-bold mb-4 text-gray-800">The Growth Cash Advantage</h3>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               With Growth Cash at ibeni, you never just "lose" money. <strong>Every bet is either immediate profit or long-term investment.</strong> 
               You're always building wealth - whether that's celebrating wins or growing your portfolio.
             </p>
             <div className="bg-white/60 p-4 rounded-lg mb-6">
-              <p className="text-sm text-gray-600 mb-2"><strong>Remember:</strong> 10% fee on winnings when you win, 10% fee on bet amount when you lose</p>
+              <p className="text-xs md:text-sm text-gray-600 mb-2"><strong>Remember:</strong> 10% fee on winnings when you win, 10% fee on bet amount when you lose</p>
               <p className="text-xs text-gray-500">This transparent fee structure keeps our platform running and your investment opportunities flowing</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

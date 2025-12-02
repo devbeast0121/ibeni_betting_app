@@ -71,20 +71,20 @@ export const PortfolioRedeemDialog = () => {
         <div className="space-y-4 max-h-[60vh] overflow-y-auto">
           <Alert className="border-blue-200 bg-blue-50">
             <AlertCircle className="h-4 w-4 text-blue-600" />
-            <AlertDescription className="text-blue-800 text-sm">
+            <AlertDescription className="text-blue-800 text-xs md:text-sm">
               <strong>PORTFOLIO REDEMPTION:</strong> You are redeeming your simulated portfolio balance. This is not an investment withdrawal but a sweepstakes prize redemption.
             </AlertDescription>
           </Alert>
 
           <Alert className="border-amber-200 bg-amber-50">
             <AlertTriangle className="h-4 w-4 text-amber-600" />
-            <AlertDescription className="text-amber-800 text-sm">
+            <AlertDescription className="text-amber-800 text-xs md:text-sm">
               <strong>REDEMPTION FEES:</strong> Portfolio redemptions include withdrawal fees: 5% after one year, 50% before one year from initial portfolio funding.
             </AlertDescription>
           </Alert>
           
           <div>
-            <label htmlFor="amount" className="text-sm font-medium">
+            <label htmlFor="amount" className="text-xs md:text-sm font-medium">
               Redemption Amount (Portfolio Balance Only)
             </label>
             <div className="relative mt-1">
@@ -110,13 +110,13 @@ export const PortfolioRedeemDialog = () => {
           
           <div className="flex items-center bg-amber-50 border border-amber-200 p-3 rounded-md">
             <Clock className="h-5 w-5 text-amber-500 mr-2 flex-shrink-0" />
-            <p className="text-sm text-amber-800">
+            <p className="text-xs md:text-sm text-amber-800">
               <span className="font-medium">Important: </span>
               Portfolio redemptions are subject to withdrawal fees and waiting periods. This is a sweepstakes prize redemption, not an investment withdrawal.
             </p>
           </div>
           
-          <div className="text-sm bg-muted/50 p-4 rounded-lg space-y-3">
+          <div className="text-xs md:text-sm bg-muted/50 p-4 rounded-lg space-y-3">
             <div>
               <p className="font-medium">Portfolio Redemption Rules:</p>
               <ul className="list-disc pl-5 mt-1 space-y-1 text-xs">
@@ -144,7 +144,7 @@ export const PortfolioRedeemDialog = () => {
                 checked={agreedToTerms}
                 onCheckedChange={(checked) => setAgreedToTerms(checked === true)}
               />
-              <label htmlFor="terms" className="text-sm leading-relaxed">
+              <label htmlFor="terms" className="text-xs md:text-sm leading-relaxed">
                 I acknowledge that this is a sweepstakes prize redemption, not an investment withdrawal. I understand that no actual investing has occurred and this represents simulated portfolio values only. I agree to the <Link to="/terms" className="underline hover:text-primary inline-flex items-center">Terms & Conditions <ExternalLink className="h-3 w-3 ml-0.5" /></Link>.
               </label>
             </div>
@@ -155,7 +155,7 @@ export const PortfolioRedeemDialog = () => {
                 checked={agreedToRules}
                 onCheckedChange={(checked) => setAgreedToRules(checked === true)}
               />
-              <label htmlFor="rules" className="text-sm leading-relaxed">
+              <label htmlFor="rules" className="text-xs md:text-sm leading-relaxed">
                 I understand and agree to the redemption fees (5% after one year, 50% before one year) and acknowledge that this platform is for entertainment purposes only. I agree to the <Link to="/terms#sweep" className="underline hover:text-primary inline-flex items-center">Sweepstakes Rules <ExternalLink className="h-3 w-3 ml-0.5" /></Link>.
               </label>
             </div>

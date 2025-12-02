@@ -32,7 +32,7 @@ const ResponsibleGamblingModal = ({ isOpen, onClose }: ResponsibleGamblingModalP
 
           <section>
             <h3 className="font-semibold mb-2">Warning Signs of Problem Gambling</h3>
-            <ul className="text-sm space-y-1 text-muted-foreground">
+            <ul className="text-xs md:text-sm space-y-1 text-muted-foreground">
               <li>• Thinking about gambling constantly</li>
               <li>• Betting more money than you can afford</li>
               <li>• Lying about gambling activities</li>
@@ -46,7 +46,7 @@ const ResponsibleGamblingModal = ({ isOpen, onClose }: ResponsibleGamblingModalP
 
           <section>
             <h3 className="font-semibold mb-2">Self-Help Tools</h3>
-            <div className="space-y-2 text-sm">
+            <div className="space-y-2 text-xs md:text-sm">
               <p>• Set daily, weekly, and monthly spending limits</p>
               <p>• Take regular breaks from the platform</p>
               <p>• Never chase losses</p>
@@ -63,7 +63,7 @@ const ResponsibleGamblingModal = ({ isOpen, onClose }: ResponsibleGamblingModalP
               <div className="flex items-center justify-between p-3 border rounded-lg">
                 <div>
                   <p className="font-medium">National Problem Gambling Helpline</p>
-                  <p className="text-sm text-muted-foreground">24/7 confidential support</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">24/7 confidential support</p>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
@@ -74,7 +74,7 @@ const ResponsibleGamblingModal = ({ isOpen, onClose }: ResponsibleGamblingModalP
               <div className="flex items-center justify-between p-3 border rounded-lg">
                 <div>
                   <p className="font-medium">Gambling Therapy</p>
-                  <p className="text-sm text-muted-foreground">Free online support</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Free online support</p>
                 </div>
                 <Button 
                   variant="outline" 
@@ -89,7 +89,7 @@ const ResponsibleGamblingModal = ({ isOpen, onClose }: ResponsibleGamblingModalP
               <div className="flex items-center justify-between p-3 border rounded-lg">
                 <div>
                   <p className="font-medium">Gamblers Anonymous</p>
-                  <p className="text-sm text-muted-foreground">Find local meetings</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Find local meetings</p>
                 </div>
                 <Button 
                   variant="outline" 
@@ -104,7 +104,7 @@ const ResponsibleGamblingModal = ({ isOpen, onClose }: ResponsibleGamblingModalP
               <div className="flex items-center justify-between p-3 border rounded-lg">
                 <div>
                   <p className="font-medium">National Council on Problem Gambling</p>
-                  <p className="text-sm text-muted-foreground">Resources and education</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Resources and education</p>
                 </div>
                 <Button 
                   variant="outline" 
@@ -122,7 +122,7 @@ const ResponsibleGamblingModal = ({ isOpen, onClose }: ResponsibleGamblingModalP
 
           <section>
             <h3 className="font-semibold mb-2">Account Controls</h3>
-            <p className="text-sm text-muted-foreground mb-3">
+            <p className="text-xs md:text-sm text-muted-foreground mb-3">
               If you need help controlling your gambling, you can:
             </p>
             <div className="space-y-2">

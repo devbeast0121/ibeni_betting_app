@@ -97,9 +97,9 @@ const Auth = () => {
           <div className="text-center mb-6">
             <div className="flex items-center justify-center mb-4">
               <TrendingUp className="h-8 w-8 text-primary mr-2" />
-              <span className="font-bold text-2xl">ibeni</span>
+              <span className="font-bold text-xl md:text-2xl">ibeni</span>
             </div>
-            <h1 className="text-2xl font-bold mb-2">Welcome to ibeni</h1>
+            <h1 className="text-xl md:text-2xl font-bold mb-2">Welcome to ibeni</h1>
             <p className="text-muted-foreground">Create an account or sign in to start</p>
           </div>
           
@@ -159,7 +159,7 @@ const Auth = () => {
                     <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <input type="checkbox" id="terms" required className="rounded" />
-                        <label htmlFor="terms" className="text-sm text-muted-foreground">
+                        <label htmlFor="terms" className="text-xs md:text-sm text-muted-foreground">
                           I agree to the{' '}
                           <a href="/terms" target="_blank" className="text-primary hover:underline">
                             Terms of Service
@@ -173,14 +173,14 @@ const Auth = () => {
 
                       <div className="flex items-center space-x-2">
                         <input type="checkbox" id="age" required className="rounded" />
-                        <label htmlFor="age" className="text-sm text-muted-foreground">
+                        <label htmlFor="age" className="text-xs md:text-sm text-muted-foreground">
                           I confirm that I am 18 years of age or older
                         </label>
                       </div>
 
                       <div className="flex items-center space-x-2">
                         <input type="checkbox" id="jurisdiction" required className="rounded" />
-                        <label htmlFor="jurisdiction" className="text-sm text-muted-foreground">
+                        <label htmlFor="jurisdiction" className="text-xs md:text-sm text-muted-foreground">
                           I confirm that sports predictions are legal in my jurisdiction
                         </label>
                       </div>
@@ -188,7 +188,7 @@ const Auth = () => {
 
                     <Alert className="border-blue-200 bg-blue-50">
                       <AlertCircle className="h-4 w-4 text-blue-600" />
-                      <AlertDescription className="text-blue-800 text-sm">
+                      <AlertDescription className="text-blue-800 text-xs md:text-sm">
                         By creating an account, you acknowledge this is a sweepstakes platform for entertainment purposes only, not real money gambling.
                       </AlertDescription>
                     </Alert>

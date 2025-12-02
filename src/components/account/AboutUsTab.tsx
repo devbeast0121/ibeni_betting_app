@@ -54,7 +54,7 @@ const AboutUsTab = () => {
           </p>
           <div className="bg-white/60 p-4 rounded-lg">
             <h4 className="font-semibold mb-2">The Traditional Betting Cycle:</h4>
-            <ul className="text-sm space-y-1">
+            <ul className="text-xs md:text-sm space-y-1">
               <li>• Bet $100 → Lose → $100 completely gone</li>
               <li>• Bet another $100 → Lose → Another $100 gone</li>
               <li>• Repeat until your bankroll is depleted</li>
@@ -85,7 +85,7 @@ const AboutUsTab = () => {
                 <DollarSign className="h-4 w-4" />
                 Fixed Cost Structure
               </h4>
-              <ul className="text-sm space-y-1">
+              <ul className="text-xs md:text-sm space-y-1">
                 <li>• 10% fee on winnings when you win</li>
                 <li>• 10% fee on bet amount when you lose</li>
                 <li>• Transparent pricing you can plan around</li>
@@ -98,7 +98,7 @@ const AboutUsTab = () => {
                 <TrendingUp className="h-4 w-4" />
                 Smart Loss Recovery
               </h4>
-              <ul className="text-sm space-y-1">
+              <ul className="text-xs md:text-sm space-y-1">
                 <li>• 90% of losses go to portfolio simulation</li>
                 <li>• Learn what investing looks like</li>
                 <li>• Redeemable with withdrawal fees</li>
@@ -119,7 +119,7 @@ const AboutUsTab = () => {
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs md:text-sm text-muted-foreground">
               Choose your sports events and make predictions just like traditional betting, 
               but with complete cost transparency.
             </p>
@@ -140,7 +140,7 @@ const AboutUsTab = () => {
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs md:text-sm text-muted-foreground">
               If you win, you get Growth Cash. If you lose, 90% goes to your portfolio simulation 
               to show you what investing those losses would have looked like.
             </p>
@@ -160,7 +160,7 @@ const AboutUsTab = () => {
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs md:text-sm text-muted-foreground">
               Your portfolio simulation is redeemable with withdrawal fees, giving you something 
               tangible instead of just lost money.
             </p>
@@ -193,7 +193,7 @@ const AboutUsTab = () => {
           </p>
           <div className="bg-white/60 p-4 rounded-lg">
             <h4 className="font-semibold mb-2">Our Core Beliefs:</h4>
-            <ul className="text-sm space-y-1">
+            <ul className="text-xs md:text-sm space-y-1">
               <li>• Harm reduction is better than prohibition</li>
               <li>• Education should come from experience</li>
               <li>• Transparency builds trust</li>
@@ -213,7 +213,7 @@ const AboutUsTab = () => {
             <div className="space-y-3">
               <h4 className="font-semibold text-red-600 text-center">Traditional Betting</h4>
               <div className="bg-red-50 p-4 rounded border border-red-200">
-                <ul className="text-sm space-y-2 text-red-700">
+                <ul className="text-xs md:text-sm space-y-2 text-red-700">
                   <li>• Hidden fees and juice</li>
                   <li>• Losses are completely gone</li>
                   <li>• No educational value</li>
@@ -227,7 +227,7 @@ const AboutUsTab = () => {
             <div className="space-y-3">
               <h4 className="font-semibold text-green-600 text-center">ibeni</h4>
               <div className="bg-green-50 p-4 rounded border border-green-200">
-                <ul className="text-sm space-y-2 text-green-700">
+                <ul className="text-xs md:text-sm space-y-2 text-green-700">
                   <li>• 10% fee on winnings (wins) or bet amount (losses)</li>
                   <li>• 90% of losses become portfolio value</li>
                   <li>• Learn about investing through simulation</li>

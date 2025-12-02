@@ -72,7 +72,7 @@ export const TipDialog = ({ open, onOpenChange, onConfirm, posterName, loading }
                 step="0.5"
               />
             </div>
-            {error && <p className="text-sm text-destructive">{error}</p>}
+            {error && <p className="text-xs md:text-sm text-destructive">{error}</p>}
           </div>
 
           <div className="space-y-2">
@@ -95,7 +95,7 @@ export const TipDialog = ({ open, onOpenChange, onConfirm, posterName, loading }
             </div>
           </div>
 
-          <div className="bg-muted/50 rounded-lg p-3 text-sm">
+          <div className="bg-muted/50 rounded-lg p-3 text-xs md:text-sm">
             <p className="text-muted-foreground">
               💡 <strong>How it works:</strong> Your tip will be held for 48 hours, then converted to bonus bets for {posterName}.
             </p>

@@ -99,8 +99,8 @@ const LocationAnalytics: React.FC = () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Total Location Checks</p>
-                <p className="text-2xl font-bold">{locationStats.total_users}</p>
+                <p className="text-xs md:text-sm font-medium text-muted-foreground">Total Location Checks</p>
+                <p className="text-xl md:text-2xl font-bold">{locationStats.total_users}</p>
               </div>
               <Globe className="h-8 w-8 text-muted-foreground" />
             </div>
@@ -111,8 +111,8 @@ const LocationAnalytics: React.FC = () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Restricted Access</p>
-                <p className="text-2xl font-bold text-destructive">{locationStats.total_restricted}</p>
+                <p className="text-xs md:text-sm font-medium text-muted-foreground">Restricted Access</p>
+                <p className="text-xl md:text-2xl font-bold text-destructive">{locationStats.total_restricted}</p>
               </div>
               <AlertTriangle className="h-8 w-8 text-destructive" />
             </div>
@@ -123,8 +123,8 @@ const LocationAnalytics: React.FC = () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Available States</p>
-                <p className="text-2xl font-bold text-green-600">48</p>
+                <p className="text-xs md:text-sm font-medium text-muted-foreground">Available States</p>
+                <p className="text-xl md:text-2xl font-bold text-green-600">48</p>
               </div>
               <MapPin className="h-8 w-8 text-green-600" />
             </div>
@@ -135,8 +135,8 @@ const LocationAnalytics: React.FC = () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Restricted States</p>
-                <p className="text-2xl font-bold text-red-600">2</p>
+                <p className="text-xs md:text-sm font-medium text-muted-foreground">Restricted States</p>
+                <p className="text-xl md:text-2xl font-bold text-red-600">2</p>
                 <p className="text-xs text-muted-foreground">ID, WA</p>
               </div>
               <Users className="h-8 w-8 text-red-600" />
@@ -156,13 +156,13 @@ const LocationAnalytics: React.FC = () => {
               {locationStats.by_state.slice(0, 10).map((state, index) => (
                 <div key={state.state_code} className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <span className="text-sm font-medium">#{index + 1}</span>
+                    <span className="text-xs md:text-sm font-medium">#{index + 1}</span>
                     <span className="font-medium">{state.state_code}</span>
                     {state.is_restricted && (
                       <Badge variant="destructive" className="text-xs">Restricted</Badge>
                     )}
                   </div>
-                  <span className="text-sm text-muted-foreground">{state.count} checks</span>
+                  <span className="text-xs md:text-sm text-muted-foreground">{state.count} checks</span>
                 </div>
               ))}
             </div>
@@ -176,7 +176,7 @@ const LocationAnalytics: React.FC = () => {
           <CardContent>
             <div className="space-y-3">
               {locationStats.recent_checks.map((check) => (
-                <div key={check.id} className="flex items-center justify-between text-sm">
+                <div key={check.id} className="flex items-center justify-between text-xs md:text-sm">
                   <div className="flex items-center gap-2">
                     <span className="font-medium">{check.city}, {check.state_code}</span>
                     {check.is_restricted && (

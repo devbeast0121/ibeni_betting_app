@@ -9,7 +9,7 @@ const UserHeader = () => {
         <AvatarFallback className="text-lg bg-navy text-white">JD</AvatarFallback>
       </Avatar>
       <div>
-        <h1 className="text-2xl font-bold">John Doe</h1>
+        <h1 className="text-xl md:text-2xl font-bold">John Doe</h1>
         <p className="text-muted-foreground">Member since March 2023</p>
       </div>
     </div>

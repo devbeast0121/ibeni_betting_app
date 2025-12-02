@@ -89,9 +89,9 @@ const AdminLogin = () => {
           <CardHeader className="space-y-1">
             <div className="flex items-center justify-center mb-4">
               <TrendingUp className="h-8 w-8 text-accent mr-2" />
-              <span className="font-bold text-2xl">Admin Portal</span>
+              <span className="font-bold text-xl md:text-2xl">Admin Portal</span>
             </div>
-            <CardTitle className="text-2xl text-center">Sign in</CardTitle>
+            <CardTitle className="text-xl md:text-2xl text-center">Sign in</CardTitle>
             <CardDescription className="text-center">
               Enter your credentials to access the admin dashboard
             </CardDescription>

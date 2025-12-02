@@ -62,7 +62,7 @@ const BettingInterface = () => {
       {isOffSeason && (
         <div className="flex items-center gap-3 p-4 bg-blue-50 border border-blue-200 rounded-lg">
           <Info className="h-5 w-5 text-blue-600 flex-shrink-0" />
-          <div className="text-sm text-blue-800">
+          <div className="text-xs md:text-sm text-blue-800">
             <strong>Off-Season Notice:</strong> Some major sports may be in their off-season. 
             Available games may be limited or showing recent/sample data for demonstration.
           </div>
@@ -73,12 +73,12 @@ const BettingInterface = () => {
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
           <h1 className="text-3xl font-bold">Sportsbook</h1>
-          <p className="text-sm text-muted-foreground mt-1">Live odds from top sportsbooks</p>
+          <p className="text-xs md:text-sm text-muted-foreground mt-1">Live odds from top sportsbooks</p>
         </div>
         <div className="flex items-center gap-2">
           <button 
             onClick={fetchLiveGamesData} 
-            className="flex items-center gap-2 px-4 py-2 text-sm border border-border hover:bg-muted rounded-lg transition-colors"
+            className="flex items-center gap-2 px-4 py-2 text-xs md:text-sm border border-border hover:bg-muted rounded-lg transition-colors"
             disabled={isLoading}
           >
             <RefreshCw className={`h-4 w-4 ${isLoading ? 'animate-spin' : ''}`} />
@@ -103,12 +103,12 @@ const BettingInterface = () => {
           <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-3">
               <TabsList className="h-10 bg-muted/30 p-1 rounded-lg">
-                <TabsTrigger value="games" className="text-sm">Games</TabsTrigger>
-                <TabsTrigger value="history" className="text-sm">
+                <TabsTrigger value="games" className="text-xs md:text-sm">Games</TabsTrigger>
+                <TabsTrigger value="history" className="text-xs md:text-sm">
                   <History className="h-3 w-3 mr-1" />
                   History
                 </TabsTrigger>
-                <TabsTrigger value="analytics" className="text-sm">
+                <TabsTrigger value="analytics" className="text-xs md:text-sm">
                   <BarChart3 className="h-3 w-3 mr-1" />
                   Analytics
                 </TabsTrigger>

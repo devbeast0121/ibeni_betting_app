@@ -28,8 +28,8 @@ const AdminPanelHeader = () => {
                 <User className="h-5 w-5 text-blue-700" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Total Users</p>
-                <h3 className="text-2xl font-bold">
+                <p className="text-xs md:text-sm text-muted-foreground">Total Users</p>
+                <h3 className="text-xl md:text-2xl font-bold">
                   {isLoadingUsers ? '...' : totalUsers}
                 </h3>
               </div>
@@ -44,8 +44,8 @@ const AdminPanelHeader = () => {
                 <DollarSign className="h-5 w-5 text-green-700" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Total Deposits</p>
-                <h3 className="text-2xl font-bold">
+                <p className="text-xs md:text-sm text-muted-foreground">Total Deposits</p>
+                <h3 className="text-xl md:text-2xl font-bold">
                   {isLoadingFinancial ? '...' : `$${totalDeposits.toLocaleString()}`}
                 </h3>
               </div>
@@ -60,8 +60,8 @@ const AdminPanelHeader = () => {
                 <TrendingUp className="h-5 w-5 text-amber-700" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Total Invested</p>
-                <h3 className="text-2xl font-bold">
+                <p className="text-xs md:text-sm text-muted-foreground">Total Invested</p>
+                <h3 className="text-xl md:text-2xl font-bold">
                   {isLoadingFinancial ? '...' : `$${totalInvested.toLocaleString()}`}
                 </h3>
               </div>

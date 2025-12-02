@@ -38,7 +38,7 @@ const GamesList = ({
         </div>
         <div className="text-center space-y-2">
           <div className="text-lg font-medium">Loading Live Odds</div>
-          <div className="text-sm text-muted-foreground">Fetching the latest betting lines...</div>
+          <div className="text-xs md:text-sm text-muted-foreground">Fetching the latest betting lines...</div>
         </div>
       </div>
     );
@@ -139,7 +139,7 @@ const GamesList = ({
             {showRefresh && onRefresh && (
               <button 
                 onClick={onRefresh}
-                className="mt-6 px-6 py-2 text-sm rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium"
+                className="mt-6 px-6 py-2 text-xs md:text-sm rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium"
               >
                 Refresh Games
               </button>

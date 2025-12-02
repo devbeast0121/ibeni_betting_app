@@ -61,7 +61,7 @@ const PaymentTab = () => {
                 </div>
                 <div>
                   <div>Chase Bank Checking Account</div>
-                  <div className="text-sm text-muted-foreground">••••3456</div>
+                  <div className="text-xs md:text-sm text-muted-foreground">••••3456</div>
                 </div>
               </div>
               <Button variant="outline" size="sm">Remove</Button>
@@ -81,7 +81,7 @@ const PaymentTab = () => {
             )}
           </Button>
           
-          <p className="mt-4 text-sm text-muted-foreground">
+          <p className="mt-4 text-xs md:text-sm text-muted-foreground">
             We securely connect your bank accounts using bank-level encryption to keep your information safe.
           </p>
         </div>
@@ -90,7 +90,7 @@ const PaymentTab = () => {
         
         <div>
           <h3 className="text-lg font-medium mb-4">Transfer Methods</h3>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-xs md:text-sm text-muted-foreground mb-4">
             All transfers are processed via secure ACH through your linked bank accounts. No fees for deposits or withdrawals.
           </p>
           
@@ -99,10 +99,10 @@ const PaymentTab = () => {
               <DollarSign className="h-5 w-5 text-green-600" />
               <div>
                 <h4 className="font-medium">ACH Bank Transfer</h4>
-                <p className="text-sm text-muted-foreground">Free transfers • 1-3 business days</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Free transfers • 1-3 business days</p>
               </div>
             </div>
-            <div className="text-sm text-green-600 font-medium">No Fees</div>
+            <div className="text-xs md:text-sm text-green-600 font-medium">No Fees</div>
           </div>
         </div>
       </CardContent>

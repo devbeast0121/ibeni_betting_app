@@ -74,7 +74,7 @@ const GameCard = ({ game, onSelectTeam, onSelectProp, onSelectSpread, onSelectTo
                   key={idx} 
                   className={`flex items-center p-3 ${idx === 0 ? 'border-b border-border/50' : ''}`}
                 >
-                  <span className="font-semibold text-sm">{team}</span>
+                  <span className="font-semibold text-xs md:text-sm">{team}</span>
                 </div>
               ))}
             </div>

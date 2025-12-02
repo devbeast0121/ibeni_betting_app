@@ -114,12 +114,12 @@ const FinancialAnalysis = () => {
         <CardContent className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <p className="text-sm font-medium">Development (One-time)</p>
-              <p className="text-2xl font-bold text-primary">${developmentCost.toLocaleString()}</p>
+              <p className="text-xs md:text-sm font-medium">Development (One-time)</p>
+              <p className="text-xl md:text-2xl font-bold text-primary">${developmentCost.toLocaleString()}</p>
             </div>
             <div>
-              <p className="text-sm font-medium">Monthly Operating</p>
-              <p className="text-2xl font-bold text-primary">${totalMonthlyCosts}</p>
+              <p className="text-xs md:text-sm font-medium">Monthly Operating</p>
+              <p className="text-xl md:text-2xl font-bold text-primary">${totalMonthlyCosts}</p>
             </div>
           </div>
           <Separator />
@@ -165,7 +165,7 @@ const FinancialAnalysis = () => {
               </CardHeader>
               <CardContent>
                 <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
+                  <table className="w-full text-xs md:text-sm">
                     <thead>
                       <tr className="border-b">
                         <th className="text-left p-2">Month</th>
@@ -206,15 +206,15 @@ const FinancialAnalysis = () => {
                     </CardHeader>
                     <CardContent>
                       <div className="space-y-2">
-                        <div className="flex justify-between text-sm">
+                        <div className="flex justify-between text-xs md:text-sm">
                           <span>Platform Fees</span>
                           <span>${proj.platformFees.toLocaleString()}</span>
                         </div>
-                        <div className="flex justify-between text-sm">
+                        <div className="flex justify-between text-xs md:text-sm">
                           <span>Subscriptions</span>
                           <span>${proj.subscriptionRevenue.toLocaleString()}</span>
                         </div>
-                        <div className="flex justify-between text-sm">
+                        <div className="flex justify-between text-xs md:text-sm">
                           <span>Withdrawal Fees</span>
                           <span>${proj.withdrawalFees.toLocaleString()}</span>
                         </div>
@@ -232,7 +232,7 @@ const FinancialAnalysis = () => {
                       <CardTitle className="text-lg">Key Metrics @ 24mo</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <div className="space-y-2 text-sm">
+                      <div className="space-y-2 text-xs md:text-sm">
                         <div className="flex justify-between">
                           <span>Monthly Betting Volume</span>
                           <span>${proj.bettingVolume.toLocaleString()}</span>
@@ -255,11 +255,11 @@ const FinancialAnalysis = () => {
                     </CardHeader>
                     <CardContent>
                       <div className="text-center">
-                        <p className="text-2xl font-bold text-green-600">
+                        <p className="text-xl md:text-2xl font-bold text-green-600">
                           ${proj.cumulativeProfit.toLocaleString()}
                         </p>
-                        <p className="text-sm text-muted-foreground">Total profit after 24 months</p>
-                        <p className="text-sm mt-2">
+                        <p className="text-xs md:text-sm text-muted-foreground">Total profit after 24 months</p>
+                        <p className="text-xs md:text-sm mt-2">
                           <span className="font-medium">{(proj.roi * 100).toFixed(0)}%</span> ROI
                         </p>
                       </div>
@@ -277,11 +277,11 @@ const FinancialAnalysis = () => {
           <CardTitle>Key Insights</CardTitle>
         </CardHeader>
         <CardContent className="space-y-3">
-          <p className="text-sm">• <strong>Break-even:</strong> Only {breakEvenUsers} active users needed for profitability</p>
-          <p className="text-sm">• <strong>Ultra-low costs:</strong> $200/month operating expenses make this extremely lean</p>
-          <p className="text-sm">• <strong>High margins:</strong> 10% platform fee + subscriptions create strong unit economics</p>
-          <p className="text-sm">• <strong>Quick payback:</strong> $3,600 development cost recovered within 2-6 months depending on growth</p>
-          <p className="text-sm">• <strong>Scalability:</strong> Minimal infrastructure costs mean profits scale directly with users</p>
+          <p className="text-xs md:text-sm">• <strong>Break-even:</strong> Only {breakEvenUsers} active users needed for profitability</p>
+          <p className="text-xs md:text-sm">• <strong>Ultra-low costs:</strong> $200/month operating expenses make this extremely lean</p>
+          <p className="text-xs md:text-sm">• <strong>High margins:</strong> 10% platform fee + subscriptions create strong unit economics</p>
+          <p className="text-xs md:text-sm">• <strong>Quick payback:</strong> $3,600 development cost recovered within 2-6 months depending on growth</p>
+          <p className="text-xs md:text-sm">• <strong>Scalability:</strong> Minimal infrastructure costs mean profits scale directly with users</p>
         </CardContent>
       </Card>
     </div>

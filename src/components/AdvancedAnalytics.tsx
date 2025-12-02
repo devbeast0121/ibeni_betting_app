@@ -47,8 +47,8 @@ export const AdvancedAnalytics = () => {
           <CardContent className="p-4">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-muted-foreground">Total ROI</p>
-                <p className={`text-2xl font-bold ${analyticsData.roi >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                <p className="text-xs md:text-sm text-muted-foreground">Total ROI</p>
+                <p className={`text-xl md:text-2xl font-bold ${analyticsData.roi >= 0 ? 'text-green-600' : 'text-red-600'}`}>
                   {formatPercentage(analyticsData.roi)}
                 </p>
               </div>
@@ -65,8 +65,8 @@ export const AdvancedAnalytics = () => {
           <CardContent className="p-4">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-muted-foreground">Win Rate</p>
-                <p className="text-2xl font-bold">{formatPercentage(analyticsData.winRate)}</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Win Rate</p>
+                <p className="text-xl md:text-2xl font-bold">{formatPercentage(analyticsData.winRate)}</p>
               </div>
               <Target className="h-8 w-8 text-blue-600" />
             </div>
@@ -77,8 +77,8 @@ export const AdvancedAnalytics = () => {
           <CardContent className="p-4">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-muted-foreground">Longest Win Streak</p>
-                <p className="text-2xl font-bold text-green-600">{analyticsData.longestWinStreak}</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Longest Win Streak</p>
+                <p className="text-xl md:text-2xl font-bold text-green-600">{analyticsData.longestWinStreak}</p>
               </div>
               <Zap className="h-8 w-8 text-green-600" />
             </div>
@@ -89,7 +89,7 @@ export const AdvancedAnalytics = () => {
           <CardContent className="p-4">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-muted-foreground">Favorite Sport</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Favorite Sport</p>
                 <p className="text-lg font-bold">{analyticsData.favoriteSport || 'N/A'}</p>
               </div>
               <Calendar className="h-8 w-8 text-purple-600" />

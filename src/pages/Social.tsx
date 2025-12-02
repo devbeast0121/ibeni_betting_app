@@ -29,7 +29,7 @@ const Social = () => {
           <div className="mb-6">
             <div className="flex items-center gap-3 mb-2">
               <Users className="w-8 h-8 text-primary" />
-              <h1 className={`${isNativeApp ? 'text-2xl' : 'text-3xl'} font-bold`}>
+              <h1 className={`${isNativeApp ? 'text-xl md:text-2xl' : 'text-3xl'} font-bold`}>
                 Social Feed
               </h1>
             </div>
@@ -44,7 +44,7 @@ const Social = () => {
       
       <footer className={`py-4 border-t ${isNativeApp ? 'safe-area-bottom' : ''}`}>
         <div className="container">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between text-sm text-muted-foreground mb-3 gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between text-xs md:text-sm text-muted-foreground mb-3 gap-4">
             <div>© 2025 ibeni. All rights reserved.</div>
             <div className="flex gap-4">
               <a href="/terms" className="hover:text-foreground">Terms</a>

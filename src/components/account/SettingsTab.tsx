@@ -65,7 +65,7 @@ const SettingsTab = () => {
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-medium">Dark Mode</h4>
-              <p className="text-sm text-muted-foreground">Switch between light and dark mode</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Switch between light and dark mode</p>
             </div>
             <Switch 
               checked={theme === 'dark'}
@@ -83,7 +83,7 @@ const SettingsTab = () => {
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-medium">Currency Display</h4>
-              <p className="text-sm text-muted-foreground">Show amounts with currency symbols</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Show amounts with currency symbols</p>
             </div>
             <Switch 
               checked={settings.currencyDisplay}
@@ -100,7 +100,7 @@ const SettingsTab = () => {
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-medium">Quick Bet Amounts</h4>
-              <p className="text-sm text-muted-foreground">Show preset betting amounts for faster wagering</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Show preset betting amounts for faster wagering</p>
             </div>
             <Switch 
               checked={settings.quickBetAmounts}
@@ -111,7 +111,7 @@ const SettingsTab = () => {
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-medium">Bet Confirmations</h4>
-              <p className="text-sm text-muted-foreground">Require confirmation before placing bets</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Require confirmation before placing bets</p>
             </div>
             <Switch 
               checked={settings.betConfirmations}
@@ -129,7 +129,7 @@ const SettingsTab = () => {
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-medium">Data Sharing</h4>
-              <p className="text-sm text-muted-foreground">Share anonymous data to improve our platform</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Share anonymous data to improve our platform</p>
             </div>
             <Switch 
               checked={settings.dataSharing}
@@ -140,7 +140,7 @@ const SettingsTab = () => {
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-medium">Marketing Communications</h4>
-              <p className="text-sm text-muted-foreground">Receive marketing emails and offers</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Receive marketing emails and offers</p>
             </div>
             <Switch 
               checked={settings.marketingEmails}

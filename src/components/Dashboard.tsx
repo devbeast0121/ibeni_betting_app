@@ -46,7 +46,7 @@ const Dashboard = () => {
     return (
       <div className="space-y-8 animate-fade-in">
         <div className="flex justify-between items-center">
-          <h2 className="text-2xl font-bold">Simulated Portfolio Overview</h2>
+          <h2 className="text-xl md:text-2xl font-bold">Simulated Portfolio Overview</h2>
           <SharePopover />
         </div>
         
@@ -60,7 +60,7 @@ const Dashboard = () => {
   return (
     <div className="space-y-8 animate-fade-in">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-bold">Simulated Portfolio Overview</h2>
+        <h2 className="text-xl md:text-2xl font-bold">Simulated Portfolio Overview</h2>
         <SharePopover />
       </div>
       
@@ -160,11 +160,11 @@ const Dashboard = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">        
         <Card>
           <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Growth Cash</CardTitle>
+            <CardTitle className="text-xs md:text-sm font-medium">Growth Cash</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex items-baseline space-x-2">
-              <div className="text-2xl font-bold">${growthCash.toFixed(2)}*</div>
+              <div className="text-xl md:text-2xl font-bold">${growthCash.toFixed(2)}*</div>
               <div className="text-muted-foreground text-profit flex items-center">
                 <TrendingUp className="mr-1 h-4 w-4" />
                 {growthCash > 0 ? '+5.2' : '0.0'}%*
@@ -178,11 +178,11 @@ const Dashboard = () => {
         
         <Card>
           <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Invested Balance</CardTitle>
+            <CardTitle className="text-xs md:text-sm font-medium">Invested Balance</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex items-baseline space-x-2">
-              <div className="text-2xl font-bold">${currentBalance.toFixed(2)}*</div>
+              <div className="text-xl md:text-2xl font-bold">${currentBalance.toFixed(2)}*</div>
               <div className="text-muted-foreground text-profit flex items-center">
                 <TrendingUp className="mr-1 h-4 w-4" />
                 {currentBalance > 0 ? '+12.3' : '0.0'}%*

@@ -6,7 +6,7 @@ const SweepstakesRules = () => {
   return (
     <div className="space-y-8">
       <section>
-        <h2 id="sweep" className="text-2xl font-semibold mb-4">Sweepstakes Rules</h2>
+        <h2 id="sweep" className="text-xl md:text-2xl font-semibold mb-4">Sweepstakes Rules</h2>
         
         <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 mb-4">
           <p className="font-semibold text-blue-800 dark:text-blue-200 text-center">
@@ -36,7 +36,7 @@ const SweepstakesRules = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">1. ELIGIBILITY TO PARTICIPATE</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">1. ELIGIBILITY TO PARTICIPATE</h2>
         <ul className="list-disc pl-5 space-y-2">
           <li>ibeni Sweepstakes (the "Sweepstakes") is open only to legal residents located in the states of the United States (excluding Hawaii, Idaho, Louisiana, Michigan, Montana, Nevada, Tennessee, and Washington), who are at least eighteen (18) years old or the age of majority in their jurisdiction at the time of entry.</li>
           <li>A person who participates in the Sweepstakes is a "Participant."</li>
@@ -53,7 +53,7 @@ const SweepstakesRules = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">2. HOW TO COLLECT GROWTH CASH</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">2. HOW TO COLLECT GROWTH CASH</h2>
         <p className="mb-4">
           A Participant must create and maintain an account with ibeni. Creation of an Account is free and no purchase is ever required. You may create an Account free of charge by downloading the ibeni App or visiting www.ibeni.com.
         </p>
@@ -63,38 +63,38 @@ const SweepstakesRules = () => {
         <div className="space-y-4">
           <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
             <h4 className="font-semibold text-green-800 dark:text-green-200 mb-2">(a) Free Bonus with Daily Learning Activities</h4>
-            <p className="text-green-700 dark:text-green-300 text-sm">
+            <p className="text-green-700 dark:text-green-300 text-xs md:text-sm">
               Receive Growth Cash for free as a bonus when participating in daily learning activities. ibeni regularly allows users to collect awards of free ibeni Coins through educational content. When a Participant completes daily learning activities, they will receive 1.00 Growth Cash provided they have a zero-balance and no pending redemptions.
             </p>
           </div>
           
           <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
             <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">(b) Free Bonus with ibeni Coin Purchases</h4>
-            <p className="text-blue-700 dark:text-blue-300 text-sm">
+            <p className="text-blue-700 dark:text-blue-300 text-xs md:text-sm">
               Receive Growth Cash for free as a bonus when purchasing ibeni Coins. Each Participant shall automatically receive Growth Cash as a free bonus in connection with the purchase of ibeni Coins if a bonus is applicable as displayed on the Platform.
             </p>
           </div>
           
           <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
             <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-2">(c) Social Media Giveaways</h4>
-            <p className="text-purple-700 dark:text-purple-300 text-sm">
+            <p className="text-purple-700 dark:text-purple-300 text-xs md:text-sm">
               Receive Growth Cash for free when entering no-cost giveaway contests on ibeni social media pages. These giveaways may require sharing posts or answering game-related questions. Contest rules and amounts will be stated on the applicable contest post.
             </p>
           </div>
           
           <div className="p-4 bg-gray-50 dark:bg-gray-900/50 rounded-lg border">
             <h4 className="font-semibold mb-2">(d) Free Mail-In Entry Method</h4>
-            <p className="text-sm mb-2">
+            <p className="text-xs md:text-sm mb-2">
               Participants in eligible states can receive Growth Cash by sending a stamped #10 envelope with a hand-written Request Card to:
             </p>
-            <div className="bg-white dark:bg-gray-800 p-3 rounded border text-sm">
+            <div className="bg-white dark:bg-gray-800 p-3 rounded border text-xs md:text-sm">
               <strong>IBENI INC.</strong><br />
               IBENI SWEEPSTAKES DEPARTMENT<br />
               [add ibeni address]
             </div>
             
-            <p className="text-sm mt-3 mb-2"><strong>Mail-In Requirements:</strong></p>
-            <ul className="list-disc pl-5 text-sm space-y-1">
+            <p className="text-xs md:text-sm mt-3 mb-2"><strong>Mail-In Requirements:</strong></p>
+            <ul className="list-disc pl-5 text-xs md:text-sm space-y-1">
               <li>Handwrite return address and "ibeni Sweepstakes Credits" on envelope</li>
               <li>Include 3" x 5" hand-written card with: full name, email, username, User ID, address, and statement agreeing to Terms</li>
               <li>One request per envelope, maximum 50 requests per Sweepstakes Period</li>
@@ -118,7 +118,7 @@ const SweepstakesRules = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">3. USING GROWTH CASH TO PLAY GAMES</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">3. USING GROWTH CASH TO PLAY GAMES</h2>
         <ul className="list-disc pl-5 space-y-2">
           <li>Participants with Growth Cash can use it to play sweepstakes games for a chance to win additional Growth Cash</li>
           <li>Within the Games section, Participants can switch between ibeni Coins and Growth Cash modes</li>
@@ -142,7 +142,7 @@ const SweepstakesRules = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">4. VERIFICATION AND CONFIRMATION OF POTENTIAL WINNERS</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">4. VERIFICATION AND CONFIRMATION OF POTENTIAL WINNERS</h2>
         
         <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800 mb-4">
           <p className="font-semibold text-red-800 dark:text-red-200">
@@ -161,7 +161,7 @@ const SweepstakesRules = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">5. ODDS OF WINNING</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">5. ODDS OF WINNING</h2>
         <ul className="list-disc pl-5 space-y-2">
           <li>Odds of winning will vary for each Game and will be published by ibeni, visible to all Participants through the Platform</li>
           <li>The Participant will choose the Game and use Growth Cash to play, and their win expectancy will be a function of these choices</li>
@@ -171,7 +171,7 @@ const SweepstakesRules = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">6. PRIZES</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">6. PRIZES</h2>
         <p className="mb-4">A Participant's Growth Cash balance is displayed in the Participant's Wallet on the Platform.</p>
         
         <h3 className="text-lg font-medium mt-4 mb-2">Eligibility Requirements</h3>
@@ -185,17 +185,17 @@ const SweepstakesRules = () => {
         <div className="space-y-4">
           <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
             <p className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Maximum Redemption</p>
-            <p className="text-blue-700 dark:text-blue-300 text-sm">$1,000 per Sweepstakes Period. Excess amounts deferred to next period.</p>
+            <p className="text-blue-700 dark:text-blue-300 text-xs md:text-sm">$1,000 per Sweepstakes Period. Excess amounts deferred to next period.</p>
           </div>
           
           <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
             <p className="font-semibold text-green-800 dark:text-green-200 mb-2">Minimum Redemption</p>
-            <p className="text-green-700 dark:text-green-300 text-sm">50 eligible Growth Cash (corresponding to $50 prize redemption request)</p>
+            <p className="text-green-700 dark:text-green-300 text-xs md:text-sm">50 eligible Growth Cash (corresponding to $50 prize redemption request)</p>
           </div>
           
           <div className="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
             <p className="font-semibold text-amber-800 dark:text-amber-200 mb-2">Weekly/Monthly Limits</p>
-            <p className="text-amber-700 dark:text-amber-300 text-sm">ibeni reserves right to limit redemptions to $250 per week and $1,000 per month</p>
+            <p className="text-amber-700 dark:text-amber-300 text-xs md:text-sm">ibeni reserves right to limit redemptions to $250 per week and $1,000 per month</p>
           </div>
         </div>
         
@@ -212,7 +212,7 @@ const SweepstakesRules = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">7. REDEMPTION OF PRIZES</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">7. REDEMPTION OF PRIZES</h2>
         
         <h3 className="text-lg font-medium mt-4 mb-2">Payment Process</h3>
         <ul className="list-disc pl-5 space-y-2">
@@ -248,7 +248,7 @@ const SweepstakesRules = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">8. ENTRY CONDITIONS AND RELEASE</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">8. ENTRY CONDITIONS AND RELEASE</h2>
         <p className="mb-4">By participating, each Participant agrees to:</p>
         <ul className="list-disc pl-5 space-y-2">
           <li>Comply with and be bound by these Sweepstakes Rules and ibeni's decisions</li>
@@ -260,7 +260,7 @@ const SweepstakesRules = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">9. WINNER'S LIST</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">9. WINNER'S LIST</h2>
         <p className="mb-4">
           Participation constitutes consent to ibeni's use of Participant's name, likeness, photograph, voice, opinions and/or hometown and state for promotional purposes in any media, worldwide, without further payment, notice or consideration.
         </p>
@@ -278,7 +278,7 @@ const SweepstakesRules = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">10. GENERAL CONDITIONS</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">10. GENERAL CONDITIONS</h2>
         <ul className="list-disc pl-5 space-y-2">
           <li>ibeni reserves right to cancel, suspend and/or modify the Sweepstakes due to circumstances outside reasonable control that impair integrity or proper functioning</li>
           <li>ibeni reserves right to disqualify individuals tampering with entry process or acting in violation of Rules</li>
@@ -291,7 +291,7 @@ const SweepstakesRules = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">11. CUSTOMER SUPPORT</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">11. CUSTOMER SUPPORT</h2>
         <ul className="list-disc pl-5 space-y-2">
           <li>ibeni will respond to questions via ibenisportsportfolio@gmail.com and may post updates on social media</li>
           <li>Participants posting bullying, spiteful or disparaging comments will be disqualified and subject to Account termination</li>
@@ -302,12 +302,12 @@ const SweepstakesRules = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">12. PARTICIPANT'S PERSONAL INFORMATION</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">12. PARTICIPANT'S PERSONAL INFORMATION</h2>
         <p className="mb-4">
           Information collected from Participants is subject to ibeni's Privacy Policy which is available on the Platform and at www.ibeni.com.
         </p>
         
-        <p className="mt-4 text-sm text-muted-foreground">
+        <p className="mt-4 text-xs md:text-sm text-muted-foreground">
           These Sweepstakes Rules were last updated on January 28, 2025
         </p>
       </section>

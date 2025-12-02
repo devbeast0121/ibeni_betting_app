@@ -12,7 +12,7 @@ import TermsFooter from '@/components/terms/TermsFooter';
 const Terms = () => {
   const location = useLocation();
   const hash = location.hash.substring(1);
-  
+
   useEffect(() => {
     // Set default tab based on URL hash
     if (hash && ['terms', 'sweep', 'privacy'].includes(hash)) {
@@ -21,7 +21,7 @@ const Terms = () => {
         (tabElement as HTMLButtonElement).click();
       }
     }
-    
+
     // Scroll to section if hash exists
     if (hash) {
       setTimeout(() => {
@@ -36,31 +36,31 @@ const Terms = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
-      
+
       <div className="container py-6 flex-1">
         <TermsHeader />
-        
+
         <Tabs defaultValue="terms" className="space-y-6">
           <TabsList>
             <TabsTrigger id="tab-terms" value="terms">Terms of Service</TabsTrigger>
             <TabsTrigger id="tab-sweep" value="sweep">Sweepstakes Rules</TabsTrigger>
             <TabsTrigger id="tab-privacy" value="privacy">Privacy Policy</TabsTrigger>
           </TabsList>
-          
+
           <TabsContent value="terms" className="space-y-8">
             <TermsOfService />
           </TabsContent>
-          
+
           <TabsContent value="sweep" className="space-y-8">
             <SweepstakesRules />
           </TabsContent>
-          
+
           <TabsContent value="privacy" className="space-y-8">
             <PrivacyPolicy />
           </TabsContent>
         </Tabs>
       </div>
-      
+
       <TermsFooter />
     </div>
   );

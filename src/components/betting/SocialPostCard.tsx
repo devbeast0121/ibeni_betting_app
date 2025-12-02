@@ -78,18 +78,18 @@ export const SocialPostCard = ({ post, onTail, onSaveTemplate, onTip }: SocialPo
           {content.title}
         </h3>
         {content.description && (
-          <p className="text-sm text-muted-foreground mb-2">{content.description}</p>
+          <p className="text-xs md:text-sm text-muted-foreground mb-2">{content.description}</p>
         )}
         {post.caption && (
-          <p className="text-sm mb-2">{post.caption}</p>
+          <p className="text-xs md:text-sm mb-2">{post.caption}</p>
         )}
         
         <div className="bg-muted/50 rounded-lg p-3 space-y-2">
-          <div className="flex items-center justify-between text-sm">
+          <div className="flex items-center justify-between text-xs md:text-sm">
             <span className="text-muted-foreground">Entry Amount:</span>
             <span className="font-semibold">${content.amount}</span>
           </div>
-          <div className="flex items-center justify-between text-sm">
+          <div className="flex items-center justify-between text-xs md:text-sm">
             <span className="text-muted-foreground">Type:</span>
             <Badge variant="outline">
               {content.betType === 'fun_tokens' ? 'Fun Tokens' : 
@@ -115,7 +115,7 @@ export const SocialPostCard = ({ post, onTail, onSaveTemplate, onTip }: SocialPo
 
       <div className="space-y-2 pt-3 border-t">
         {(post.total_tips || 0) > 0 && (
-          <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground bg-muted/30 rounded-lg py-2">
+          <div className="flex items-center justify-center gap-2 text-xs md:text-sm text-muted-foreground bg-muted/30 rounded-lg py-2">
             <DollarSign className="w-4 h-4" />
             <span>${(post.total_tips || 0).toFixed(2)} in tips received</span>
           </div>

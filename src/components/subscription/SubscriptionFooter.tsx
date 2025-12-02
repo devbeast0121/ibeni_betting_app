@@ -23,11 +23,11 @@ const SubscriptionFooter: React.FC<SubscriptionFooterProps> = ({ selectedPlan, l
         <div className="flex items-start gap-2 sm:gap-3">
           <XCircle className="h-5 w-5 text-red-500 mt-0.5 flex-shrink-0" />
           <div className="text-left">
-            <h3 className="font-medium text-red-800 text-sm sm:text-base">No Refunds Policy</h3>
-            <p className="text-xs sm:text-sm text-red-700 mt-1">
+            <h3 className="font-medium text-red-800 text-xs md:text-sm sm:text-base">No Refunds Policy</h3>
+            <p className="text-xs sm:text-xs md:text-sm text-red-700 mt-1">
               <strong>ALL PAYMENTS ARE FINAL AND NON-REFUNDABLE.</strong> This includes membership fees, Growth Cash deposits, and all platform operation fees.
             </p>
-            <ul className="text-xs sm:text-sm text-red-700 mt-2 list-disc pl-4 sm:pl-5 space-y-1">
+            <ul className="text-xs sm:text-xs md:text-sm text-red-700 mt-2 list-disc pl-4 sm:pl-5 space-y-1">
               <li>No refunds for any reason including account termination</li>
               <li>No refunds for service changes or discontinuation</li>
               <li>No refunds for technical issues or user dissatisfaction</li>
@@ -40,11 +40,11 @@ const SubscriptionFooter: React.FC<SubscriptionFooterProps> = ({ selectedPlan, l
         <div className="flex items-start gap-2 sm:gap-3">
           <AlertCircle className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" />
           <div className="text-left">
-            <h3 className="font-medium text-amber-800 text-sm sm:text-base">Withdrawal Policy</h3>
-            <p className="text-xs sm:text-sm text-amber-700 mt-1">
+            <h3 className="font-medium text-amber-800 text-xs md:text-sm sm:text-base">Withdrawal Policy</h3>
+            <p className="text-xs sm:text-xs md:text-sm text-amber-700 mt-1">
               Clear withdrawal rules for Growth Cash winnings and portfolio losses:
             </p>
-            <ul className="text-xs sm:text-sm text-amber-700 mt-2 list-disc pl-4 sm:pl-5 space-y-1">
+            <ul className="text-xs sm:text-xs md:text-sm text-amber-700 mt-2 list-disc pl-4 sm:pl-5 space-y-1">
               <li><strong>Growth Cash winnings:</strong> Subscribers may withdraw after a 3-month waiting period, non-subscribers cannot withdraw</li>
               <li><strong>Portfolio losses:</strong> All members may withdraw with fees (5% after one year, 50% before one year)</li>
               <li>10% platform fee on winnings when you win, 10% on bet amount when you lose</li>
@@ -66,7 +66,7 @@ const SubscriptionFooter: React.FC<SubscriptionFooterProps> = ({ selectedPlan, l
         </Button>
       </div>
 
-      <p className="mt-4 text-xs sm:text-sm text-muted-foreground text-center px-4">
+      <p className="mt-4 text-xs sm:text-xs md:text-sm text-muted-foreground text-center px-4">
         You can cancel your membership at any time through your account settings. <strong>No refunds will be provided.</strong>
       </p>
       <div className="mt-6 text-xs text-muted-foreground border-t pt-4 max-w-lg mx-auto px-4">

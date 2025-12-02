@@ -14,7 +14,7 @@ const Account = () => {
       
       <footer className="py-4 border-t">
         <div className="container">
-          <div className="flex items-center justify-between text-sm text-muted-foreground mb-3">
+          <div className="flex items-center justify-between text-xs md:text-sm text-muted-foreground mb-3">
             <div>© 2025 ibeni. All rights reserved.</div>
             <div className="flex gap-4">
               <a href="/terms" className="hover:text-foreground">Terms</a>

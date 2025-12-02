@@ -50,7 +50,7 @@ const PortfolioTracker = () => {
     return (
       <div className="space-y-8 animate-fade-in">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-bold">Your ibeni Investment Portfolio</h2>
+          <h2 className="text-xl md:text-2xl font-bold">Your ibeni Investment Portfolio</h2>
           <SharePopover portfolioRef={portfolioRef} />
         </div>
         
@@ -64,7 +64,7 @@ const PortfolioTracker = () => {
   return (
     <div className="space-y-8 animate-fade-in">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold">Your ibeni Portfolio Simulation</h2>
+        <h2 className="text-xl md:text-2xl font-bold">Your ibeni Portfolio Simulation</h2>
         <SharePopover portfolioRef={portfolioRef} />
       </div>
       
@@ -78,7 +78,7 @@ const PortfolioTracker = () => {
         <CardContent>
           <Alert className="mb-6 border-blue-200 bg-blue-50">
             <Info className="h-4 w-4 text-blue-600" />
-            <AlertDescription className="text-blue-800 text-sm">
+            <AlertDescription className="text-blue-800 text-xs md:text-sm">
               <strong>Prize Simulation:</strong> This shows simulated prize amounts you could redeem after one year (with 5% fee) or before one year (with 50% fee). No actual investing occurs - these are potential prize values only.
             </AlertDescription>
           </Alert>
@@ -113,7 +113,7 @@ const PortfolioTracker = () => {
                 <div className="space-y-4">
                   {investmentSources.map((source, index) => (
                     <div key={index} className="space-y-1">
-                      <div className="flex justify-between text-sm">
+                      <div className="flex justify-between text-xs md:text-sm">
                         <span>{source.name}</span>
                         <span className="font-medium">${source.amount.toFixed(2)}</span>
                       </div>
@@ -131,7 +131,7 @@ const PortfolioTracker = () => {
                 <Card>
                   <CardContent className="p-4">
                     <div className="flex items-baseline justify-between">
-                      <span className="text-sm font-medium">Total Prize Value</span>
+                      <span className="text-xs md:text-sm font-medium">Total Prize Value</span>
                       <div className="text-profit flex items-center">
                         <ArrowUp className="mr-1 h-4 w-4" />
                         <span className="font-bold">${totalInvestmentValue.toFixed(2)}*</span>
@@ -144,7 +144,7 @@ const PortfolioTracker = () => {
                   <Card>
                     <CardContent className="p-4">
                       <div className="flex items-baseline justify-between">
-                        <span className="text-sm font-medium">Account Status</span>
+                        <span className="text-xs md:text-sm font-medium">Account Status</span>
                         <div className="text-profit flex items-center">
                           <TrendingUp className="mr-1 h-4 w-4" />
                           <span className="font-bold">Active*</span>
@@ -176,7 +176,7 @@ const PortfolioTracker = () => {
         <CardContent>
           <Alert className="mb-4 border-amber-200 bg-amber-50">
             <AlertTriangle className="h-4 w-4 text-amber-600" />
-            <AlertDescription className="text-amber-800 text-sm">
+            <AlertDescription className="text-amber-800 text-xs md:text-sm">
               <strong>WITHDRAWAL RULES:</strong> Growth Cash winnings may be withdrawn by subscribers after a 3-month waiting period. Non-subscribers cannot withdraw Growth Cash winnings. Portfolio losses are withdrawable by all members with fees: 5% after one year, 50% before one year.
             </AlertDescription>
           </Alert>
@@ -185,7 +185,7 @@ const PortfolioTracker = () => {
             <div className="flex justify-between items-center">
               <div>
                 <div className="font-medium">Portfolio Losses (From Lost Bets)</div>
-                <div className="text-2xl font-bold">
+                <div className="text-xl md:text-2xl font-bold">
                   ${totalInvestmentValue.toFixed(2)}
                 </div>
               </div>
@@ -194,12 +194,12 @@ const PortfolioTracker = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <div className="text-center">
-                <div className="text-sm text-muted-foreground">Growth Cash (From Wins)</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Growth Cash (From Wins)</div>
                 <div className="text-lg font-semibold text-muted-foreground">${(balance?.growth_cash || 0).toFixed(2)}</div>
                 <div className="text-xs text-muted-foreground mt-1">Subscribers: 3mo wait period to withdraw</div>
               </div>
               <div className="text-center">
-                <div className="text-sm text-muted-foreground">Portfolio Losses (From Lost Bets)</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Portfolio Losses (From Lost Bets)</div>
                 <div className="text-lg font-semibold">${(balance?.invested_balance || 0).toFixed(2)}</div>
                 <div className="text-xs text-profit mt-1">Withdrawable: 5% fee after 1yr, 50% before</div>
               </div>

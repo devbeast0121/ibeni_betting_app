@@ -53,14 +53,6 @@ function AppContent() {
   const isNativeApp = useIsNativeApp();
   const [locationVerified, setLocationVerified] = useState(false);
 
-  // ✅ Move useEffect BEFORE any conditional returns
-  useEffect(() => {
-    // Add a class to the body when running as a native app
-    if (isNativeApp) {
-      document.body.classList.add('native-app');
-    }
-  }, [isNativeApp]);
-
   const handleLocationVerification = () => {
     setLocationVerified(true);
   };

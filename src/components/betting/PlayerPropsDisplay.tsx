@@ -190,7 +190,7 @@ const PlayerPropsDisplay = ({ props, gameId, onSelectProp }: PlayerPropsDisplayP
             />
           ))
         ) : (
-          <div className="text-center py-4 text-sm text-muted-foreground">
+          <div className="text-center py-4 text-xs md:text-sm text-muted-foreground">
             No props in this category
           </div>
         )}
@@ -211,7 +211,7 @@ const PlayerPropsGroup = ({ player, props, gameId, onSelectProp }: PlayerPropsGr
     <div className="border border-border/50 rounded-lg overflow-hidden">
       {/* Player Header */}
       <div className="bg-muted/30 px-3 py-2 border-b border-border/50">
-        <span className="font-semibold text-sm">{player}</span>
+        <span className="font-semibold text-xs md:text-sm">{player}</span>
         <span className="text-xs text-muted-foreground ml-2">
           {props.length} {props.length === 1 ? 'prop' : 'props'}
         </span>
@@ -247,10 +247,10 @@ const CompactPropRow = ({ prop, gameId, onSelectProp }: CompactPropRowProps) => 
       <div className="flex items-center justify-between gap-2 px-3 py-3">
         {/* Stat & Line - No Player Name */}
         <div className="flex items-center gap-2 flex-1 min-w-0 py-0.5">
-          <span className="text-sm font-medium truncate">
+          <span className="text-xs md:text-sm font-medium truncate">
             {formatStatName(prop.stat)}
           </span>
-          <span className="text-sm font-bold text-primary">{prop.line}</span>
+          <span className="text-xs md:text-sm font-bold text-primary">{prop.line}</span>
           
           {/* Bookmaker indicator */}
           {hasMultipleBookmakers && (

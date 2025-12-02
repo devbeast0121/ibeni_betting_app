@@ -87,7 +87,7 @@ export function PullToRefresh({ onRefresh, children, threshold = 60 }: PullToRef
             }}
           />
           {pullDistance > threshold * 0.8 && (
-            <span className="ml-2 text-sm text-primary font-medium">
+            <span className="ml-2 text-xs md:text-sm text-primary font-medium">
               {canRefresh ? 'Release to refresh' : 'Pull to refresh'}
             </span>
           )}

@@ -5,8 +5,8 @@ const TermsOfService = () => {
   return (
     <div className="space-y-8">
       <section>
-        <h2 id="terms" className="text-2xl font-semibold mb-4">Terms of Service</h2>
-        <p className="mb-4 text-sm text-muted-foreground">
+        <h2 id="terms" className="text-xl md:text-2xl font-semibold mb-4">Terms of Service</h2>
+        <p className="mb-4 text-xs md:text-sm text-muted-foreground">
           <strong>IMPORTANT NOTICE:</strong> These Terms of Use have been updated as of January 28, 2025, and shall supersede and replace all prior Terms of Use.
         </p>
         <p className="mb-4">
@@ -17,7 +17,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Important Notices</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">Important Notices</h2>
         <div className="space-y-4">
           <div className="p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-800">
             <p className="font-semibold text-yellow-800 dark:text-yellow-200">
@@ -29,7 +29,7 @@ const TermsOfService = () => {
             <p className="font-semibold text-red-800 dark:text-red-200 mb-2">
               ARBITRATION AND CLASS ACTION WAIVER
             </p>
-            <p className="text-red-700 dark:text-red-300 text-sm">
+            <p className="text-red-700 dark:text-red-300 text-xs md:text-sm">
               THESE TERMS OF USE INCLUDE AN ARBITRATION AND CLASS ACTION WAIVER AGREEMENT WHICH REQUIRES THAT ANY PAST, PENDING, OR FUTURE DISPUTES BETWEEN YOU AND US SHALL BE RESOLVED BY FINAL AND BINDING ARBITRATION ON AN INDIVIDUAL BASIS ONLY. ARBITRATION MEANS YOU WILL NOT BE ABLE TO SEEK DAMAGES IN COURT OR PRESENT YOUR CASE TO A JURY.
             </p>
           </div>
@@ -38,7 +38,7 @@ const TermsOfService = () => {
             <p className="font-semibold text-blue-800 dark:text-blue-200 mb-2">
               OPT-OUT NOTICE
             </p>
-            <p className="text-blue-700 dark:text-blue-300 text-sm">
+            <p className="text-blue-700 dark:text-blue-300 text-xs md:text-sm">
               IF YOU DO NOT WISH TO BE SUBJECT TO ARBITRATION, YOU MAY OPT OUT WITHIN THIRTY (30) DAYS OF ENTERING THIS AGREEMENT BY FOLLOWING THE INSTRUCTIONS PROVIDED IN SECTION 20 BELOW.
             </p>
           </div>
@@ -47,7 +47,7 @@ const TermsOfService = () => {
             <p className="font-semibold text-gray-800 dark:text-gray-200 mb-2">
               TRACKING TECHNOLOGY WAIVER
             </p>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">
+            <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm">
               ANY CLAIMS AGAINST IBENI ARISING FROM TRACKING SOFTWARE, INCLUDING META PIXEL, COOKIES, OR JAVASCRIPT ARE HEREBY FULLY WAIVED.
             </p>
           </div>
@@ -57,7 +57,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Acceptance of Terms</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">Acceptance of Terms</h2>
         <p className="mb-4">
           You represent and warrant that You have the right, authority, and capacity to accept these Terms and to abide by them, that You are of legal age and that You have fully read and understood the Terms. By using, or otherwise accessing the Service, or clicking to accept or agree where that option is made available, You confirm that you have read and agree to these Terms.
         </p>
@@ -69,7 +69,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">1. Changes to Terms of Use</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">1. Changes to Terms of Use</h2>
         <p className="mb-4">
           From time to time, We may modify or amend these Terms. If We do so, any such modifications or changes shall be reflected in the TOU on the Site. We may also notify You by email regarding any material changes to the TOU. Your further use of the Service after any changes are posted shall constitute further consent and agreement to the terms as changed or amended.
         </p>
@@ -81,7 +81,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">2. Definitions</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">2. Definitions</h2>
         <div className="space-y-3">
           <p><strong>Content</strong> means text, graphics, user interfaces, visual interfaces, photographs, trademarks, logos, sounds, music, artwork, computer code and other material used, displayed or available as part of the Games and Platform, including Virtual Coins.</p>
           
@@ -108,7 +108,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">3. Limited Revocable License</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">3. Limited Revocable License</h2>
         <p className="mb-4">
           Subject to Your agreement and continuing compliance with these Terms, we grant You a limited, personal, non-exclusive, non-transferable, non-sublicensable, revocable, license to access and use the Service, Games and Virtual Coins solely for Your personal, private entertainment on the Platform and for no other reason.
         </p>
@@ -132,7 +132,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">4. Eligibility</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">4. Eligibility</h2>
         <p className="mb-2">Your eligibility for continued use of the Service is contingent on Your ongoing compliance with these Terms:</p>
         <ul className="list-disc pl-5 space-y-2">
           <li>You are over 18 years of age or the minimum legal age of majority in your jurisdiction</li>
@@ -150,7 +150,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">5. Your User Account</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">5. Your User Account</h2>
         <ul className="list-disc pl-5 space-y-2">
           <li>You must create a User Account to access the Service</li>
           <li>Only one User Account is permitted per person. Multiple accounts may result in termination</li>
@@ -167,7 +167,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">6. Games and Contests</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">6. Games and Contests</h2>
         <p className="mb-4">
           Games offered on the Service may have their own rules available on the Service. You must familiarize Yourself with the applicable terms before playing any Game.
         </p>
@@ -183,7 +183,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">7. Purchases</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">7. Purchases</h2>
         <p className="mb-4">
           You can purchase a limited, revocable license to use additional ibeni Coins in the "Cashier" section of the Platform.
         </p>
@@ -203,7 +203,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">8. Withdrawal Rules & Platform Tenure</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">8. Withdrawal Rules & Platform Tenure</h2>
         <p className="mb-4">
           ibeni implements a graduated withdrawal system based on platform tenure:
         </p>
@@ -212,12 +212,12 @@ const TermsOfService = () => {
         <div className="space-y-4">
           <div className="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
             <p className="font-semibold text-amber-800 dark:text-amber-200 mb-2">Less than 1 year on platform:</p>
-            <p className="text-amber-700 dark:text-amber-300 text-sm">50% platform fee applies to Growth Cash withdrawals from portfolio losses</p>
+            <p className="text-amber-700 dark:text-amber-300 text-xs md:text-sm">50% platform fee applies to Growth Cash withdrawals from portfolio losses</p>
           </div>
           
           <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
             <p className="font-semibold text-green-800 dark:text-green-200 mb-2">1 year or more on platform:</p>
-            <p className="text-green-700 dark:text-green-300 text-sm">Reduced 5% platform fee on Growth Cash withdrawals</p>
+            <p className="text-green-700 dark:text-green-300 text-xs md:text-sm">Reduced 5% platform fee on Growth Cash withdrawals</p>
           </div>
         </div>
         
@@ -232,7 +232,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">9. Verification</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">9. Verification</h2>
         <p className="mb-4">
           You acknowledge that we are entitled to conduct verification checks that we may reasonably require under applicable laws and regulations.
         </p>
@@ -250,7 +250,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">10. Prohibited Conduct</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">10. Prohibited Conduct</h2>
         <p className="mb-4">You will not, directly or indirectly:</p>
         <ul className="list-disc pl-5 space-y-2">
           <li>Hack into any part of the Games or Platform</li>
@@ -268,7 +268,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">11. Account Suspension/Termination</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">11. Account Suspension/Termination</h2>
         <p className="mb-4">
           ibeni reserves the right to deactivate, limit, or suspend Your Account for any reason at Our sole discretion, including but not limited to:
         </p>
@@ -294,7 +294,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">12. Chat Functionality</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">12. Chat Functionality</h2>
         <p className="mb-4">Our Platform provides a chat feature that allows users to communicate in real-time.</p>
         
         <p className="mb-2">When using the Chat Feature, you agree not to:</p>
@@ -312,7 +312,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">13. Promotions</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">13. Promotions</h2>
         <ul className="list-disc pl-5 space-y-2">
           <li>Any promotions are subject to these Terms and official rules published on the Site</li>
           <li>We reserve the right to withdraw or alter promotions without notice</li>
@@ -326,7 +326,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">14. User Generated Content</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">14. User Generated Content</h2>
         <p className="mb-4">You are responsible for complying with all laws applicable to Your User Content.</p>
         <ul className="list-disc pl-5 space-y-2">
           <li>You agree not to submit defamatory, abusive, obscene, threatening, or illegal material</li>
@@ -342,7 +342,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">15. Intellectual Property</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">15. Intellectual Property</h2>
         <p className="mb-4">
           These Terms confer only the right to use the Service and do not convey any ownership rights. All rights, title and interest in the Service remain our sole property.
         </p>
@@ -357,7 +357,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">16. Third Party Websites & Content</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">16. Third Party Websites & Content</h2>
         <p className="mb-4">
           The Service may contain links to third-party content. Any charges or obligations You incur with third parties are Your sole responsibility.
         </p>
@@ -371,21 +371,21 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">17. Disclaimers & Limitation of Liability</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">17. Disclaimers & Limitation of Liability</h2>
         <div className="space-y-4">
           <div className="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
             <h3 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">AS IS BASIS</h3>
-            <p className="text-amber-700 dark:text-amber-300 text-sm">The Service is provided "AS IS" and "AS AVAILABLE." We make no representations or warranties of any kind regarding the Service.</p>
+            <p className="text-amber-700 dark:text-amber-300 text-xs md:text-sm">The Service is provided "AS IS" and "AS AVAILABLE." We make no representations or warranties of any kind regarding the Service.</p>
           </div>
           
           <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800">
             <h3 className="font-semibold text-red-800 dark:text-red-200 mb-2">LIMITATION OF LIABILITY</h3>
-            <p className="text-red-700 dark:text-red-300 text-sm">In no event shall ibeni be liable for indirect, incidental, special, consequential, or punitive damages, including lost profits.</p>
+            <p className="text-red-700 dark:text-red-300 text-xs md:text-sm">In no event shall ibeni be liable for indirect, incidental, special, consequential, or punitive damages, including lost profits.</p>
           </div>
           
           <div className="p-4 bg-gray-50 dark:bg-gray-900/50 rounded-lg border">
             <h3 className="font-semibold mb-2">NO WARRANTIES</h3>
-            <p className="text-sm">We disclaim all warranties including merchantability, fitness for purpose, non-infringement, accuracy of portfolio simulations, and service reliability.</p>
+            <p className="text-xs md:text-sm">We disclaim all warranties including merchantability, fitness for purpose, non-infringement, accuracy of portfolio simulations, and service reliability.</p>
           </div>
         </div>
         
@@ -395,21 +395,21 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">18. Financial and Investment Disclaimers</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">18. Financial and Investment Disclaimers</h2>
         <div className="space-y-4">
           <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
             <h3 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">NOT INVESTMENT ADVICE</h3>
-            <p className="text-blue-700 dark:text-blue-300 text-sm">Nothing on this platform constitutes investment advice, financial advice, or trading advice. All information is for educational and entertainment purposes only.</p>
+            <p className="text-blue-700 dark:text-blue-300 text-xs md:text-sm">Nothing on this platform constitutes investment advice, financial advice, or trading advice. All information is for educational and entertainment purposes only.</p>
           </div>
           
           <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
             <h3 className="font-semibold text-purple-800 dark:text-purple-200 mb-2">NO FINANCIAL SERVICES</h3>
-            <p className="text-purple-700 dark:text-purple-300 text-sm">ibeni does not provide investment advisory, broker-dealer, or money management services. We are not registered as an investment advisor.</p>
+            <p className="text-purple-700 dark:text-purple-300 text-xs md:text-sm">ibeni does not provide investment advisory, broker-dealer, or money management services. We are not registered as an investment advisor.</p>
           </div>
           
           <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
             <h3 className="font-semibold text-green-800 dark:text-green-200 mb-2">PORTFOLIO SIMULATION ONLY</h3>
-            <p className="text-green-700 dark:text-green-300 text-sm">All portfolio features are simulations for entertainment and education. They do not represent actual investments.</p>
+            <p className="text-green-700 dark:text-green-300 text-xs md:text-sm">All portfolio features are simulations for entertainment and education. They do not represent actual investments.</p>
           </div>
         </div>
         
@@ -419,7 +419,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">19. Customer Complaints Procedure</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">19. Customer Complaints Procedure</h2>
         <p className="mb-4">
           If you have a complaint, please contact our Customer Support team at ibenisportsportfolio@gmail.com. Our team will investigate and respond as soon as possible, typically within 12 hours.
         </p>
@@ -431,7 +431,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">20. Binding Arbitration Agreement and Class Action Waiver</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">20. Binding Arbitration Agreement and Class Action Waiver</h2>
         <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800 mb-4">
           <p className="font-semibold text-red-800 dark:text-red-200">
             MANDATORY ARBITRATION - READ CAREFULLY
@@ -458,7 +458,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">21. Governing Law</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">21. Governing Law</h2>
         <p className="mb-4">
           These Terms shall be governed by the laws of the State of Pennsylvania without regard to its conflict of law provisions.
         </p>
@@ -467,7 +467,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">22. Severability</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">22. Severability</h2>
         <p className="mb-4">
           If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions will continue in full force and effect.
         </p>
@@ -496,7 +496,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">17. Copyright Infringement Notice</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">17. Copyright Infringement Notice</h2>
         <p className="mb-4">
           ibeni requires our Users to respect the intellectual property rights of others. If you are the owner of copyright and you believe that your work has been used in the Service in a way that constitutes copyright infringement, please provide our Copyright Agent with a notice meeting all of the requirements of the Digital Millennium Copyright Act ("DMCA").
         </p>
@@ -531,11 +531,11 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">18. Disruptions, Errors & Omissions</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">18. Disruptions, Errors & Omissions</h2>
         
         <h3 className="text-lg font-medium mt-4 mb-2">Disclaimer of Warranties</h3>
         <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800 mb-4">
-          <p className="font-semibold text-red-800 dark:text-red-200 text-sm">
+          <p className="font-semibold text-red-800 dark:text-red-200 text-xs md:text-sm">
             THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT EXPRESS OR IMPLIED WARRANTIES OF ANY KIND.
           </p>
         </div>
@@ -570,11 +570,11 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">19. Enhanced Limitation of Liability and Indemnification</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">19. Enhanced Limitation of Liability and Indemnification</h2>
         
         <h3 className="text-lg font-medium mt-4 mb-2">Limitation of Liability</h3>
         <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800 mb-4">
-          <p className="font-semibold text-red-800 dark:text-red-200 text-sm">
+          <p className="font-semibold text-red-800 dark:text-red-200 text-xs md:text-sm">
             BY USING THE SERVICE, YOU ACKNOWLEDGE THAT SUCH USE IS AT YOUR OWN RISK.
           </p>
         </div>
@@ -616,7 +616,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">20. Customer Service and Initial Dispute Resolution</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">20. Customer Service and Initial Dispute Resolution</h2>
         
         <h3 className="text-lg font-medium mt-4 mb-2">Customer Support</h3>
         <p className="mb-4">
@@ -656,13 +656,13 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">21. BINDING ARBITRATION AGREEMENT AND CLASS ACTION WAIVER</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">21. BINDING ARBITRATION AGREEMENT AND CLASS ACTION WAIVER</h2>
         
         <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800 mb-4">
           <p className="font-semibold text-red-800 dark:text-red-200">
             PLEASE READ CAREFULLY - THIS SECTION REQUIRES ARBITRATION AND LIMITS CLASS ACTIONS
           </p>
-          <p className="text-red-700 dark:text-red-300 text-sm mt-2">
+          <p className="text-red-700 dark:text-red-300 text-xs md:text-sm mt-2">
             YOU HAVE 30 DAYS TO OPT OUT OF ARBITRATION IF YOU HAVE NOT PREVIOUSLY AGREED TO AN ARBITRATION PROVISION
           </p>
         </div>
@@ -714,7 +714,7 @@ const TermsOfService = () => {
         <h3 className="text-lg font-medium mt-4 mb-2">OPT-OUT PROCEDURE</h3>
         <div className="p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-800 mb-4">
           <p className="font-semibold text-yellow-800 dark:text-yellow-200 mb-2">IMPORTANT - TIME SENSITIVE</p>
-          <p className="text-yellow-700 dark:text-yellow-300 text-sm">
+          <p className="text-yellow-700 dark:text-yellow-300 text-xs md:text-sm">
             IF YOU HAVE NOT PREVIOUSLY AGREED TO ARBITRATION WITH IBENI, YOU MAY OPT OUT WITHIN THIRTY (30) DAYS BY SENDING EMAIL TO opt-out@ibeni.com WITH "OPT OUT" IN SUBJECT LINE AND BODY, INCLUDING YOUR FULL NAME, IBENI USER ID, ADDRESS AND STATEMENT THAT YOU WISH TO OPT-OUT OF ARBITRATION.
           </p>
         </div>
@@ -732,10 +732,10 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">22. Waiver of Jury Trial</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">22. Waiver of Jury Trial</h2>
         <div className="p-4 bg-gray-50 dark:bg-gray-900/50 rounded-lg border mb-4">
           <p className="font-semibold mb-2">JURY TRIAL WAIVER</p>
-          <p className="text-sm">
+          <p className="text-xs md:text-sm">
             EACH PARTY HEREBY WAIVES, TO THE FULLEST EXTENT PERMITTED BY LAW, ANY RIGHT TO A TRIAL BY JURY IN ANY LEGAL PROCEEDING ARISING OUT OF OR RELATING TO THE PLATFORM OR SERVICES OR ANY TRANSACTIONS BETWEEN THE PARTIES.
           </p>
         </div>
@@ -744,7 +744,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">23. Miscellaneous</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">23. Miscellaneous</h2>
         
         <h3 className="text-lg font-medium mt-4 mb-2">Entire Agreement</h3>
         <p className="mb-4">
@@ -795,7 +795,7 @@ const TermsOfService = () => {
       <Separator />
       
       <section>
-        <h2 className="text-2xl font-semibold mb-4">24. Applicable Law and Jurisdiction</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">24. Applicable Law and Jurisdiction</h2>
         
         <h3 className="text-lg font-medium mt-4 mb-2">Governing Law</h3>
         <p className="mb-4">

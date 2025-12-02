@@ -9,6 +9,16 @@ export default {
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
 	],
+	safelist: [
+		{
+			pattern: /(h|w|min-h|min-w|max-h|max-w)-(0|1|2|3|4|5|6|8|10|12|16|20|24|32|40|48|64)/,
+			variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+		},
+		{
+			pattern: /(p|m|gap|space)-(0|1|2|3|4|5|6|8|10|12|16|20|24)/,
+			variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+		},
+	],
 	prefix: "",
 	theme: {
 		container: {
