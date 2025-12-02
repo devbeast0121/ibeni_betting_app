@@ -236,9 +236,9 @@ const WelcomeLogin = () => {
               </Label>
             </div>
 
-            <Button 
-              type="submit" 
-              className="w-full" 
+            <Button
+              type="submit"
+              className="w-full h-11 sm:h-10"
               disabled={loading || !ageVerified || !jurisdictionConfirmed}
             >
               {loading ? 'Creating Account...' : 'Create Account'}
@@ -269,9 +269,9 @@ const WelcomeLogin = () => {
                 required
               />
             </div>
-            <Button 
-              type="submit" 
-              className="w-full" 
+            <Button
+              type="submit"
+              className="w-full h-11 sm:h-10"
               disabled={loading}
             >
               {loading ? 'Logging in...' : 'Login'}

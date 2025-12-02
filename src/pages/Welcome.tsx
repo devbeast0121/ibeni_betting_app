@@ -85,9 +85,9 @@ const Welcome = () => {
         </div>
       </header>
 
-      <main className="flex-1 flex items-center justify-center p-4">
+      <main className="flex-1 flex items-center justify-center p-3 sm:p-4">
         <Card className="w-full max-w-md mx-auto">
-          <CardContent className="pt-6">
+          <CardContent className="pt-4 sm:pt-6 px-4 sm:px-6">
             {currentStep < 6 ? (
               <div className="space-y-6">
                 <div className="flex justify-between items-center mb-4">

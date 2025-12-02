@@ -20,42 +20,42 @@ const WalletPopover = ({ isLoadingBalance, balance }: WalletPopoverProps) => {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button variant="outline" size="sm" className="flex items-center gap-2">
-          <Wallet className="h-4 w-4" />
+        <Button variant="outline" size="sm" className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm">
+          <Wallet className="h-3 w-3 sm:h-4 sm:w-4" />
           <span className="font-medium">
             {isLoadingBalance ? "..." : `$${balance?.growth_cash.toFixed(2)}`}
           </span>
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-80">
-        <div className="space-y-4">
+      <PopoverContent className="w-[calc(100vw-2rem)] sm:w-80" align="end">
+        <div className="space-y-3 sm:space-y-4">
           <div>
-            <h4 className="font-medium mb-2">Your Balances</h4>
+            <h4 className="font-medium mb-2 text-sm sm:text-base">Your Balances</h4>
             <div className="space-y-2">
-              <div className="flex justify-between">
-                <span className="text-sm">Fun Tokens:</span>
+              <div className="flex justify-between text-xs sm:text-sm">
+                <span>Fun Tokens:</span>
                 <span className="font-medium">{isLoadingBalance ? "..." : balance?.available_balance.toFixed(2)}</span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-sm">Growth Cash:</span>
+              <div className="flex justify-between text-xs sm:text-sm">
+                <span>Growth Cash:</span>
                 <span className="font-medium">${isLoadingBalance ? "..." : balance?.growth_cash.toFixed(2)}</span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-sm">Bonus Bets:</span>
+              <div className="flex justify-between text-xs sm:text-sm">
+                <span>Bonus Bets:</span>
                 <span className="font-medium">${isLoadingBalance ? "..." : balance?.bonus_bets.toFixed(2)}</span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-sm">Invested Balance:</span>
+              <div className="flex justify-between text-xs sm:text-sm">
+                <span>Invested Balance:</span>
                 <span className="font-medium">${isLoadingBalance ? "..." : balance?.invested_balance.toFixed(2)}</span>
               </div>
             </div>
           </div>
-          
+
           <div className="flex gap-2">
             <DepositDialog />
             <WithdrawDialog />
           </div>
-          
+
           <div className="text-xs text-muted-foreground">
             Note: Withdrawals are subject to waiting periods based on your membership level.
           </div>

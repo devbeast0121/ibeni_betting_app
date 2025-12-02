@@ -25,11 +25,11 @@ const NotificationsPopover = ({ notifications, onMarkAllAsRead }: NotificationsP
           <span className="sr-only">Notifications</span>
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-80 p-0">
-        <div className="p-4 border-b">
-          <h4 className="font-medium">Notifications</h4>
+      <PopoverContent className="w-[calc(100vw-2rem)] sm:w-80 p-0" align="end">
+        <div className="p-3 sm:p-4 border-b">
+          <h4 className="font-medium text-sm sm:text-base">Notifications</h4>
         </div>
-        <div className="max-h-[300px] overflow-y-auto">
+        <div className="max-h-[60vh] sm:max-h-[300px] overflow-y-auto">
           {notifications.length === 0 ? (
             <div className="p-4 text-center text-sm text-muted-foreground">
               No notifications yet
@@ -37,17 +37,17 @@ const NotificationsPopover = ({ notifications, onMarkAllAsRead }: NotificationsP
           ) : (
             <div>
               {notifications.map((notification) => (
-                <div 
-                  key={notification.id} 
+                <div
+                  key={notification.id}
                   className={cn(
-                    "p-4 border-b last:border-b-0 hover:bg-accent/50 cursor-pointer",
+                    "p-3 sm:p-4 border-b last:border-b-0 hover:bg-accent/50 cursor-pointer transition-colors",
                     !notification.read && "bg-accent/20"
                   )}
                 >
                   <div className="flex items-start justify-between gap-2">
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <h5 className="font-medium text-sm">{notification.title}</h5>
-                      <p className="text-sm text-muted-foreground mt-1">
+                      <p className="text-xs sm:text-sm text-muted-foreground mt-1 line-clamp-2">
                         {notification.description}
                       </p>
                       <p className="text-xs text-muted-foreground mt-1">
@@ -64,9 +64,9 @@ const NotificationsPopover = ({ notifications, onMarkAllAsRead }: NotificationsP
           )}
         </div>
         <div className="p-2 border-t">
-          <Button 
-            variant="ghost" 
-            className="w-full text-sm justify-center" 
+          <Button
+            variant="ghost"
+            className="w-full text-xs sm:text-sm justify-center"
             size="sm"
             onClick={onMarkAllAsRead}
           >
