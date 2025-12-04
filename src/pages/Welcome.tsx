@@ -75,7 +75,7 @@ const Welcome = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <header className="border-b pt-8 md:mt-4 pb-4">
+      <header className="border-b py-4">
         <div className="container">
           <div className="flex items-center">
             <TrendingUp className="h-6 w-6 text-accent mr-2" />

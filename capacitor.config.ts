@@ -4,10 +4,10 @@ const config: CapacitorConfig = {
   appId: 'com.ibeni.app',
   appName: 'ibeni',
   webDir: 'dist',
-  // server: {
-  //   url: 'http://192.168.143.121:8080',
-  //   cleartext: true
-  // },
+  server: {
+    url: 'http://192.168.143.121:8080',
+    cleartext: true
+  },
   ios: {
     contentInset: 'always',
     backgroundColor: '#ffffff',
@@ -17,7 +17,15 @@ const config: CapacitorConfig = {
     }
   },
   android: {
-    backgroundColor: '#ffffff'
+    backgroundColor: '#ffffff',
+    allowMixedContent: false
+  },
+  plugins: {
+    StatusBar: {
+      style: 'dark',
+      backgroundColor: '#1e3a8a',
+      overlaysWebView: false
+    }
   }
 };
 

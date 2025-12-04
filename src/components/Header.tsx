@@ -59,7 +59,7 @@ const Header = () => {
 
   return (
     <header className="sticky z-30 w-full border-b bg-background/95 backdrop-blur">
-      <div className="container flex h-16 items-end md:items-center justify-between gap-4">
+      <div className="container flex h-16 items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           {/* Mobile Menu */}
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>

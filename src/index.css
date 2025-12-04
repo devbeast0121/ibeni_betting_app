@@ -164,3 +164,16 @@ body.native-app #root {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Ensure safe areas for native app */
+body.native-app {
+  padding-top: max(env(safe-area-inset-top, 0px), 20px);
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 20px);
+}
+
+/* Override for root container */
+body.native-app #root,
+body.capacitor #root {
+  max-width: 100% !important;
+  margin: 0 !important;
+}

@@ -1,6 +1,6 @@
 /* Capacitor-specific styling fixes */
 
-/* Safe area handling for iOS notches */
+/* Safe area handling for iOS notches and Android status bars */
 :root {
     --safe-area-top: env(safe-area-inset-top, 0px);
     --safe-area-bottom: env(safe-area-inset-bottom, 0px);
@@ -8,12 +8,29 @@
     --safe-area-right: env(safe-area-inset-right, 0px);
 }
 
-/* Only apply these fixes when running as native app */
+/* Apply safe area padding to body when running as native app */
 body.capacitor {
-    /* Remove the fixed positioning - let normal scroll work */
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+    /* Add padding for status bar and bottom navigation */
+    padding-top: max(var(--safe-area-top), 20px) !important;
+    padding-bottom: max(var(--safe-area-bottom), 20px) !important;
+    padding-left: var(--safe-area-left) !important;
+    padding-right: var(--safe-area-right) !important;
+}
+
+/* Alternative: Apply to #root instead of body */
+body.capacitor #root {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    min-height: 100vh;
+    /* Apply safe area padding */
+    padding-top: max(var(--safe-area-top), 24px);
+    padding-bottom: max(var(--safe-area-bottom), 24px);
+    padding-left: max(var(--safe-area-left), 16px);
+    padding-right: max(var(--safe-area-right), 16px);
 }
 
 /* Disable text selection and tap highlights */
@@ -50,14 +67,17 @@ body.capacitor {
     -webkit-overflow-scrolling: touch;
 }
 
-/* Fix for fixed positioned elements - apply to your header/footer components */
+/* Fix for fixed positioned elements */
 body.capacitor .fixed-header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding-top: var(--safe-area-top);
+    padding-top: max(var(--safe-area-top), 20px);
+    padding-left: var(--safe-area-left);
+    padding-right: var(--safe-area-right);
     z-index: 1000;
+    background: inherit;
 }
 
 body.capacitor .fixed-footer {
@@ -65,13 +85,18 @@ body.capacitor .fixed-footer {
     bottom: 0;
     left: 0;
     right: 0;
-    padding-bottom: var(--safe-area-bottom);
+    padding-bottom: max(var(--safe-area-bottom), 20px);
+    padding-left: var(--safe-area-left);
+    padding-right: var(--safe-area-right);
     z-index: 1000;
+    background: inherit;
 }
 
-/* Remove padding from root in native app */
-body.capacitor #root {
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
+/* For Android - additional top padding for status bar */
+body.capacitor.platform-android {
+    padding-top: max(var(--safe-area-top), 24px) !important;
+}
+
+body.capacitor.platform-android #root {
+    padding-top: max(var(--safe-area-top), 28px);
 }
