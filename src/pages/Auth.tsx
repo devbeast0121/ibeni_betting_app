@@ -20,22 +20,22 @@ const Auth = () => {
 
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email || !password || !confirmPassword) {
       toast.error('Please fill in all fields');
       return;
     }
-    
+
     if (password !== confirmPassword) {
       toast.error('Passwords do not match');
       return;
     }
-    
+
     try {
       setLoading(true);
-      
+
       const redirectUrl = `${window.location.origin}/dashboard`;
-      
+
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
@@ -43,14 +43,14 @@ const Auth = () => {
           emailRedirectTo: redirectUrl
         }
       });
-      
+
       if (error) {
         throw error;
       }
-      
+
       toast.success('Account created! Please check your email to confirm your registration.');
       navigate('/dashboard');
-      
+
     } catch (error: any) {
       console.error('Error signing up:', error);
       toast.error(error.message || 'An error occurred during sign up');
@@ -61,27 +61,27 @@ const Auth = () => {
 
   const handleSignIn = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email || !password) {
       toast.error('Please enter both email and password');
       return;
     }
-    
+
     try {
       setLoading(true);
-      
+
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
-      
+
       if (error) {
         throw error;
       }
-      
+
       toast.success('Logged in successfully');
       navigate('/dashboard');
-      
+
     } catch (error: any) {
       console.error('Error signing in:', error);
       toast.error(error.message || 'An error occurred during login');
@@ -102,14 +102,14 @@ const Auth = () => {
             <h1 className="text-xl md:text-2xl font-bold mb-2">Welcome to ibeni</h1>
             <p className="text-muted-foreground">Create an account or sign in to start</p>
           </div>
-          
+
           <Alert className="border-amber-200 bg-amber-50">
             <AlertCircle className="h-4 w-4 text-amber-600" />
             <AlertDescription className="text-amber-800">
               <strong>IMPORTANT DISCLAIMER:</strong> ibeni is a sweepstakes platform for entertainment purposes only. No purchase necessary to enter or win. This is not real money gambling. All financial simulations are for educational purposes only.
             </AlertDescription>
           </Alert>
-          
+
           <Card>
             <CardHeader>
               <CardTitle>Get Started</CardTitle>
@@ -117,19 +117,19 @@ const Auth = () => {
             </CardHeader>
             <CardContent>
               <Tabs defaultValue="signup" className="w-full">
-                <TabsList className="grid w-full grid-cols-2 mb-4">
-                  <TabsTrigger value="signup">Sign Up</TabsTrigger>
-                  <TabsTrigger value="login">Login</TabsTrigger>
+                <TabsList className="w-full mb-4">
+                  <TabsTrigger className="flex-1" value="signup">Sign Up</TabsTrigger>
+                  <TabsTrigger className="flex-1" value="login">Login</TabsTrigger>
                 </TabsList>
-                
+
                 <TabsContent value="signup">
                   <form onSubmit={handleSignUp} className="space-y-4">
                     <div className="space-y-2">
                       <Label htmlFor="signup-email">Email</Label>
-                      <Input 
-                        id="signup-email" 
-                        type="email" 
-                        placeholder="name@example.com" 
+                      <Input
+                        id="signup-email"
+                        type="email"
+                        placeholder="name@example.com"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
@@ -137,9 +137,9 @@ const Auth = () => {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="signup-password">Password</Label>
-                      <Input 
-                        id="signup-password" 
-                        type="password" 
+                      <Input
+                        id="signup-password"
+                        type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
@@ -147,15 +147,15 @@ const Auth = () => {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="confirm-password">Confirm Password</Label>
-                      <Input 
-                        id="confirm-password" 
-                        type="password" 
+                      <Input
+                        id="confirm-password"
+                        type="password"
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
                         required
                       />
                     </div>
-                    
+
                     <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <input type="checkbox" id="terms" required className="rounded" />
@@ -192,25 +192,25 @@ const Auth = () => {
                         By creating an account, you acknowledge this is a sweepstakes platform for entertainment purposes only, not real money gambling.
                       </AlertDescription>
                     </Alert>
-                    
-                    <Button 
-                      type="submit" 
-                      className="w-full" 
+
+                    <Button
+                      type="submit"
+                      className="w-full"
                       disabled={loading}
                     >
                       {loading ? 'Creating Account...' : 'Create Account'}
                     </Button>
                   </form>
                 </TabsContent>
-                
+
                 <TabsContent value="login">
                   <form onSubmit={handleSignIn} className="space-y-4">
                     <div className="space-y-2">
                       <Label htmlFor="login-email">Email</Label>
-                      <Input 
-                        id="login-email" 
-                        type="email" 
-                        placeholder="name@example.com" 
+                      <Input
+                        id="login-email"
+                        type="email"
+                        placeholder="name@example.com"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
@@ -218,17 +218,17 @@ const Auth = () => {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="login-password">Password</Label>
-                      <Input 
-                        id="login-password" 
-                        type="password" 
+                      <Input
+                        id="login-password"
+                        type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
                       />
                     </div>
-                    <Button 
-                      type="submit" 
-                      className="w-full" 
+                    <Button
+                      type="submit"
+                      className="w-full"
                       disabled={loading}
                     >
                       {loading ? 'Logging in...' : 'Login'}
