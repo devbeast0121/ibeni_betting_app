@@ -42,6 +42,9 @@
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 215 33% 25%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --sportsbook-accent: 215 92% 15%;
+    --sportsbook-accent-foreground: 210 40% 98%;
   }
 
   .dark {
@@ -72,6 +75,9 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
+    --sportsbook-accent: 210 40% 98%;
+    --sportsbook-accent-foreground: 222.2 47.4% 11.2%;
   }
 }
 
@@ -167,7 +173,7 @@ body.native-app #root {
 
 /* Ensure safe areas for native app */
 body.native-app {
-  padding-top: max(env(safe-area-inset-top, 0px), 20px);
+  padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: max(env(safe-area-inset-bottom, 0px), 20px);
 }
 

@@ -14,7 +14,7 @@ body.capacitor {
     min-height: 100vh;
     overflow-x: hidden;
     /* Add padding for status bar and bottom navigation */
-    padding-top: max(var(--safe-area-top), 20px) !important;
+    padding-top: var(--safe-area-top, 0px) !important;
     padding-bottom: max(var(--safe-area-bottom), 20px) !important;
     padding-left: var(--safe-area-left) !important;
     padding-right: var(--safe-area-right) !important;
@@ -27,7 +27,7 @@ body.capacitor #root {
     max-width: 100%;
     min-height: 100vh;
     /* Apply safe area padding */
-    padding-top: max(var(--safe-area-top), 24px);
+    padding-top: var(--safe-area-top, 0px);
     padding-bottom: max(var(--safe-area-bottom), 24px);
     padding-left: max(var(--safe-area-left), 16px);
     padding-right: max(var(--safe-area-right), 16px);
@@ -94,9 +94,9 @@ body.capacitor .fixed-footer {
 
 /* For Android - additional top padding for status bar */
 body.capacitor.platform-android {
-    padding-top: max(var(--safe-area-top), 24px) !important;
+    padding-top: max(var(--safe-area-top), 0px) !important;
 }
 
 body.capacitor.platform-android #root {
-    padding-top: max(var(--safe-area-top), 28px);
+    padding-top: max(var(--safe-area-top), 0px);
 }
